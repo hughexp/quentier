@@ -50,8 +50,6 @@ QString libquentierBuildTimeInfo()
     QTextStream strm(&info);
 
     strm << QUENTIER_LIBQUENTIER_BINARY_NAME << ", version "
-         << LIB_QUENTIER_VERSION_MAJOR << "." << LIB_QUENTIER_VERSION_MINOR
-         << "." << LIB_QUENTIER_VERSION_PATCH
          << ", build info: " << LIB_QUENTIER_BUILD_INFO;
 
 #if LIB_QUENTIER_USE_QT_WEB_ENGINE
