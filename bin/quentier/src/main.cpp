@@ -20,7 +20,7 @@
 #include "ParseCommandLine.h"
 #include "SetupStartupSettings.h"
 
-#include <lib/exception/LocalStorageVersionTooHighException.h>
+//#include <lib/exception/LocalStorageVersionTooHighException.h>
 #include <lib/initialization/Initialize.h>
 #include <lib/initialization/LoadDependencies.h>
 #include <lib/tray/SystemTrayIconManager.h>
@@ -180,28 +180,28 @@ int main(int argc, char * argv[])
 
         return 1;
     }
-    catch (const quentier::LocalStorageVersionTooHighException & e) {
-        criticalMessageBox(
-            nullptr, QObject::tr("Quentier cannot start"),
-            QObject::tr("Local storage is too new for used libquentier version "
-                        "to handle"),
-            QObject::tr("The version of local storage persistence for "
-                        "the account you are trying to open is higher than "
-                        "the version supported by the currently used build of "
-                        "libquentier. It means that this account's data has "
-                        "already been opened using a more recent version of "
-                        "libquentier which has changed the data layout "
-                        "somehow. The current version of libquentier cannot "
-                        "work with this version of data as it doesn't know "
-                        "what exactly has changed in the data layout and how "
-                        "to work with it. Please upgrade your versions of "
-                        "libquentier and Quentier and try again."));
+    // catch (const quentier::LocalStorageVersionTooHighException & e) {
+    //     criticalMessageBox(
+    //         nullptr, QObject::tr("Quentier cannot start"),
+    //         QObject::tr("Local storage is too new for used libquentier version "
+    //                     "to handle"),
+    //         QObject::tr("The version of local storage persistence for "
+    //                     "the account you are trying to open is higher than "
+    //                     "the version supported by the currently used build of "
+    //                     "libquentier. It means that this account's data has "
+    //                     "already been opened using a more recent version of "
+    //                     "libquentier which has changed the data layout "
+    //                     "somehow. The current version of libquentier cannot "
+    //                     "work with this version of data as it doesn't know "
+    //                     "what exactly has changed in the data layout and how "
+    //                     "to work with it. Please upgrade your versions of "
+    //                     "libquentier and Quentier and try again."));
 
-        qWarning() << "Caught LocalStorageVersionTooHighException: "
-                   << e.nonLocalizedErrorMessage();
+    //     qWarning() << "Caught LocalStorageVersionTooHighException: "
+    //                << e.nonLocalizedErrorMessage();
 
-        return 1;
-    }
+    //     return 1;
+    // }
     catch (const quentier::IQuentierException & e) {
         internalErrorMessageBox(
             nullptr,

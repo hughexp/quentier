@@ -224,7 +224,6 @@ Account AccountManager::defaultAccount(AccountSource * pAccountSource)
         error.appendBase(errorDescription.base());
         error.appendBase(errorDescription.additionalBases());
         error.details() = errorDescription.details();
-        throw AccountInitializationException(error);
     }
 
     updateLastUsedAccount(account);
@@ -1153,16 +1152,7 @@ void AccountManager::updateLastUsedAccount(const Account & account)
     appSettings.endGroup();
 }
 
-AccountManager::AccountInitializationException::AccountInitializationException(
-    const ErrorString & message) :
-    IQuentierException(message)
-{}
 
-const QString
-AccountManager::AccountInitializationException::exceptionDisplayName() const
-{
-    return QStringLiteral("AccountInitializationException");
-}
 
 ////////////////////////////////////////////////////////////////////////////////
 

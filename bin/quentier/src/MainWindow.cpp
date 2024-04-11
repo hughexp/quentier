@@ -39,7 +39,7 @@
 #include <lib/enex/EnexExporter.h>
 #include <lib/enex/EnexImportDialog.h>
 #include <lib/enex/EnexImporter.h>
-#include <lib/exception/LocalStorageVersionTooHighException.h>
+//#include <lib/exception/LocalStorageVersionTooHighException.h>
 #include <lib/initialization/DefaultAccountFirstNotebookAndNoteCreator.h>
 #include <lib/model/common/ColumnChangeRerouter.h>
 #include <lib/network/NetworkProxySettingsHelpers.h>
@@ -5155,9 +5155,9 @@ void MainWindow::setupLocalStorageManager()
     auto & localStorageManager =
         *m_pLocalStorageManagerAsync->localStorageManager();
 
-    if (localStorageManager.isLocalStorageVersionTooHigh(errorDescription)) {
-        throw quentier::LocalStorageVersionTooHighException(errorDescription);
-    }
+    //if (localStorageManager.isLocalStorageVersionTooHigh(errorDescription)) {
+    //    throw quentier::LocalStorageVersionTooHighException(errorDescription);
+    //}
 
     auto localStoragePatches =
         localStorageManager.requiredLocalStoragePatches();

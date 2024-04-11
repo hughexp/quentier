@@ -39,15 +39,6 @@ QT_FORWARD_DECLARE_CLASS(AccountModel)
 class AccountManager : public QObject
 {
     Q_OBJECT
-public:
-    class AccountInitializationException : public IQuentierException
-    {
-    public:
-        explicit AccountInitializationException(const ErrorString & message);
-
-    protected:
-        virtual const QString exceptionDisplayName() const override;
-    };
 
 public:
     AccountManager(QObject * parent = nullptr);

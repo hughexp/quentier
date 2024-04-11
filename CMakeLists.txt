@@ -1,10 +1,17 @@
 cmake_minimum_required(VERSION 3.5.1)
 
+# 指定cmake工程的名称，指定了这个值，就会为PROJECT_NAME，PROJECT_SOURCE_DIR
+# <PROJECT-NAME>_SOURCE_DIR等内容赋值，详情参考：https://static.app.yinxiang.com/collectors/details/9162e6a8-69b8-4982-929e-4ed1d132dd9b?from=webclipper
 project(quentier)
+set(QUENTIER_VERSION_MAJOR "0")
+set(QUENTIER_VERSION_MINOR "5")
+set(QUENTIER_VERSION_PATCH "0")
 
+#set的值<value>...表示可以给变量设置0个或者多个值，当设置多个值时（大于2个），多个值会通过分号连接符连接成一个真实的值赋值给变量，当设置0个值时，实际上是把变量变为未设置状态，相当于调用unset命令。
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/sanitizers ${CMAKE_MODULE_PATH})
 
+# 定义在cmake/modules目录下
 include(QuentierCMakePolicies)
 SET_POLICIES()
 
@@ -18,20 +25,25 @@ set(PROJECT_DOMAIN "${PROJECT_DOMAIN_FIRST}.${PROJECT_DOMAIN_SECOND}")
 set(BUILD_WITH_AUTHENTICATION_MANAGER ON CACHE BOOL "If on, libquentier includes its own authentication manager, otherwise only the interface for it is included")
 set(BUILD_WITH_NOTE_EDITOR ON CACHE BOOL "If on, libquentier includes note editor UI component")
 
-
-include(LibquentierCompilerSettings)
-include(LibquentierAdditionalCompilerWarnings)
-include(LibquentierLinkerSettings)
-include(LibquentierSetupQt)
+# 从文件或模块加载并运行CMake代码
+include(QuentierCompilerSettings)
+include(QuentierAdditionalCompilerWarnings)
+include(QuentierLinkerSettings)
+include(QuentierSetupQt)
 include(LibquentierFindLibXml2)
 include(LibquentierFindOpenSSL)
-include(LibquentierFindBoost)
+include(QuentierFindBoost)
 include(LibquentierFindHunspell)
 include(LibquentierFindQtKeychain)
-include(LibquentierFindQEverCloud)
+include(QuentierFindQEverCloud)
 include(LibquentierFindTidyHtml5)
-include(LibquentierSetupDoxygen)
+include(QuentierUpdateTranslations)
+include(QuentierDoxygen)
 include(PrependPath)
+
+if(NOT APPLE)
+  include(QuentierFindBreakpad)
+endif()
 
 ## 处理库相关的内容
 find_package(Sanitizers)
@@ -74,7 +86,6 @@ if(LIBCPP)
   list(APPEND THIRDPARTY_LIB_DIRS ${LIBCPP_LIB_DIR})
 endif()
 
-include_directories(headers)
 
 define_property(SOURCE
   PROPERTY skip_autoformat
@@ -709,54 +720,6 @@ if(MAJOR_VERSION_LIB_NAME_SUFFIX)
   set(LIBQUENTIER_LIBNAME_SUFFIX "${PROJECT_VERSION_MAJOR}")
 endif()
 
-set(LIBNAME "lib${LIBQUENTIER_QT_VERSION}quentier${LIBQUENTIER_LIBNAME_SUFFIX}")
-
-add_library(${LIBNAME} SHARED
-            ${${PROJECT_NAME}_HEADERS}
-            ${${PROJECT_NAME}_SOURCES}
-            ${${PROJECT_NAME}_RESOURCES_RCC}
-            ${${PROJECT_NAME}_FORMS_HEADERS})
-
-add_sanitizers(${LIBNAME})
-
-# installation settings, needed for target properties
-if(NOT CMAKE_INSTALL_LIBDIR)
-  set(CMAKE_INSTALL_LIBDIR "lib")
-endif()
-
-if(NOT CMAKE_INSTALL_BINDIR)
-  set(CMAKE_INSTALL_BINDIR "bin")
-endif()
-
-if(NOT CMAKE_INSTALL_INCLUDEDIR)
-  set(CMAKE_INSTALL_INCLUDEDIR "include")
-endif()
-
-if(NOT CMAKE_INSTALL_TRANSLATIONSDIR)
-  set(CMAKE_INSTALL_TRANSLATIONSDIR "share/${PROJECT_NAME}/translations")
-endif()
-
-if(NOT INSTALL_CMAKE_DIR)
-  if(WIN32 AND NOT CYGWIN)
-    set(DEF_INSTALL_CMAKE_DIR "CMake")
-  else()
-    set(DEF_INSTALL_CMAKE_DIR "${CMAKE_INSTALL_LIBDIR}/cmake/Libquentier-${LIBQUENTIER_QT_VERSION}")
-  endif()
-  set(INSTALL_CMAKE_DIR ${DEF_INSTALL_CMAKE_DIR} CACHE PATH "Installation directory for CMake files")
-endif()
-
-# library target properties
-set_target_properties(${LIBNAME} PROPERTIES
-  PREFIX ""
-  VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}"
-  SOVERSION "${PROJECT_VERSION_MAJOR}"
-  CXX_STANDARD 14
-  CXX_EXTENSIONS OFF
-  MACOSX_RPATH 1
-  COMPILE_DEFINITIONS "BUILDING_QUENTIER_DLL=1")
-
-target_link_libraries(${LIBNAME} ${QT_LIBRARIES} ${THIRDPARTY_LIBS})
-
 add_definitions("-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII")
 add_definitions("-DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT")
 
@@ -851,17 +814,19 @@ set(TEST_RESOURCES
 
 qt_add_resources(${PROJECT_NAME}_TEST_RESOURCES_RCC ${TEST_RESOURCES})
 
-add_executable(test_${PROJECT_NAME} ${TEST_HEADERS} ${TEST_SOURCES} ${${PROJECT_NAME}_TEST_RESOURCES_RCC})
+# add_executable(test_${PROJECT_NAME} ${TEST_HEADERS} ${TEST_SOURCES} ${${PROJECT_NAME}_TEST_RESOURCES_RCC})
 
 # test executable target properties
-set_target_properties(test_${PROJECT_NAME} PROPERTIES
-  CXX_STANDARD 14
-  CXX_EXTENSIONS OFF)
+#set_target_properties(test_${PROJECT_NAME} PROPERTIES
+#  CXX_STANDARD 14
+#  CXX_EXTENSIONS OFF)
 
-add_sanitizers(test_${PROJECT_NAME})
-add_test(test_${PROJECT_NAME} test_${PROJECT_NAME})
+#add_sanitizers(test_${PROJECT_NAME})
+#add_test(test_${PROJECT_NAME} test_${PROJECT_NAME})
 
-target_link_libraries(test_${PROJECT_NAME} ${LIBNAME} ${QT_LIBRARIES} ${THIRDPARTY_LIBS})
+# 将目录与所需要的库进行链接，它用于指定一个目标，例如可执行文件或者库，需要依赖的其它库，以便在构建过程中能正确的链接到这些库。
+# 第一个参数是要链接的目标的名称，它必须是由add_executable()或者add_library()等命令创建，对同一个目标重复调用，按照调用顺序追加项。
+# target_link_libraries(test_${PROJECT_NAME} ${QT_LIBRARIES} ${THIRDPARTY_LIBS})
 
 include(SetupClangFormat)
 include(SetupClangTidy)
@@ -927,97 +892,15 @@ endif()
 file(COPY cmake/modules/LibquentierFindOtherDependenciesQt5.cmake DESTINATION ${PROJECT_BINARY_DIR})
 file(RENAME ${PROJECT_BINARY_DIR}/LibquentierFindOtherDependenciesQt5.cmake ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindOtherDependencies.cmake)
 
-# install shared library
-install(TARGETS ${LIBNAME}
-        EXPORT Libquentier-${LIBQUENTIER_QT_VERSION}LibraryDepends
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
-
-# install headers
-if(BUILD_WITH_NOTE_EDITOR)
-  foreach(ITEM ${NOTE_EDITOR_HEADERS})
-    install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/note_editor)
-  endforeach()
-endif()
-
-foreach(ITEM ${TYPES_HEADERS})
-  install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/types)
-endforeach()
-
-foreach(ITEM ${ENML_HEADERS})
-  install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/enml)
-endforeach()
-
-foreach(ITEM ${LOCAL_STORAGE_HEADERS})
-  install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/local_storage)
-endforeach()
-
-foreach(ITEM ${SYNCHRONIZATION_HEADERS})
-  install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/synchronization)
-endforeach()
-
-foreach(ITEM ${LOGGING_HEADERS})
-  install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/logging)
-endforeach()
-
-foreach(ITEM ${EXCEPTION_HEADERS})
-  install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/exception)
-endforeach()
-
-foreach(ITEM ${UTILITY_HEADERS})
-  install(FILES ${ITEM} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/quentier/utility)
-endforeach()
-
-# install translations
-foreach(QM_FILE ${${PROJECT_NAME}_QM_FILES})
-  install(CODE "
-          set(QM_FILE \"${QM_FILE})\")
-          if(EXISTS \"${QM_FILE}\")
-            get_filename_component(QM_FILE_BASE_NAME \"${QM_FILE}\" NAME)
-            message(STATUS \"Installing: \$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_TRANSLATIONSDIR}/\${QM_FILE_BASE_NAME}\")
-            file(COPY \"${QM_FILE}\" DESTINATION \"\$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_TRANSLATIONSDIR}\")
-          endif()
-          " COMPONENT Runtime)
-endforeach()
-
-# install cmake files
-#install(EXPORT Libquentier-${LIBQUENTIER_QT_VERSION}LibraryDepends DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindPackageWrapperMacro.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindHunspell.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/hunspell_new_api_check.cpp DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindTidyHtml5.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindQtDependencies.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindOtherDependencies.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}Config.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-#install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}ConfigVersion.cmake DESTINATION ${INSTALL_CMAKE_DIR})
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 enable_testing()
 
 set(LIBQUENTIER_CPPCHECKABLE_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}/headers")
 include(LibquentierSetupCppCheck)
-## 处理完毕
 
 
-include(QuentierCompilerSettings)
-include(QuentierAdditionalCompilerWarnings)
-include(QuentierLinkerSettings)
-include(QuentierSetupQt)
-include(QuentierUpdateTranslations)
-include(QuentierFindQEverCloud)
-include(QuentierFindBoost)
-include(QuentierDoxygen)
-
-if(NOT APPLE)
-  include(QuentierFindBreakpad)
-endif()
-
-
-set(QUENTIER_VERSION_MAJOR "0")
-set(QUENTIER_VERSION_MINOR "5")
-set(QUENTIER_VERSION_PATCH "0")
-
+## 库相关的内容处理完毕
 find_package(Sanitizers)
 
 set(BUILD_WITH_WIKI_TOOLS OFF CACHE BOOL "Build test tools for downloading wiki articles as notes")
@@ -1042,7 +925,6 @@ prepend_path(RESOURCES_FULL_PATH "${RESOURCES}" "${CMAKE_CURRENT_SOURCE_DIR}")
 
 set(THIRDPARTY_LIBS ${QT_LIBRARIES})
 list(APPEND THIRDPARTY_LIBS ${QEVERCLOUD_LIBRARIES})
-list(APPEND THIRDPARTY_LIBS ${LIBQUENTIER_LIBRARIES})
 if(WIN32)
   list(APPEND THIRDPARTY_LIBS wsock32 ws2_32)
 endif()
@@ -1090,10 +972,8 @@ else()
   set(QUENTIER_PACKAGED_AS_APP_IMAGE_DEFINE "#define QUENTIER_PACKAGED_AS_APP_IMAGE 0")
 endif()
 
-get_filename_component(LIBQUENTIER_BINARY_NAME "${LIBQUENTIER_LIBRARY_LOCATION}" NAME)
 get_filename_component(QEVERCLOUD_BINARY_NAME "${QEVERCLOUD_LIBRARY_LOCATION}" NAME)
 
-set(QUENTIER_LIBQUENTIER_BINARY_NAME "#define QUENTIER_LIBQUENTIER_BINARY_NAME \"${LIBQUENTIER_BINARY_NAME}\"")
 set(QUENTIER_QEVERCLOUD_BINARY_NAME "#define QUENTIER_QEVERCLOUD_BINARY_NAME \"${QEVERCLOUD_BINARY_NAME}\"")
 
 if (NOT QUENTIER_BUILD_INFO)
@@ -1223,8 +1103,6 @@ else()
   endif()
 endif()
 
-get_filename_component(LIBQUENTIER_FILE_NAME "${LIBQUENTIER_LIBRARIES}" NAME)
-
 add_definitions("-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII")
 add_definitions("-DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT")
 
@@ -1264,17 +1142,17 @@ if(NOT WIN32 AND NOT APPLE)
           RENAME org.quentier.Quentier.appdata.xml)
 endif()
 
+# 扫描子目录，将执行里面的CMakeLists文件
 add_subdirectory(lib)
 add_subdirectory(bin)
 
 get_property(QUENTIER_CPPCHECKABLE_INCLUDE_DIRS GLOBAL PROPERTY QUENTIER_CPPCHECKABLE_INCLUDE_DIRS)
-list(APPEND QUENTIER_CPPCHECKABLE_INCLUDE_DIRS "${LIBQUENTIER_INCLUDE_DIRS}")
+
 set_property(GLOBAL PROPERTY QUENTIER_CPPCHECKABLE_INCLUDE_DIRS ${QUENTIER_CPPCHECKABLE_INCLUDE_DIRS})
 
 include(QuentierSetupCppCheck)
 
 get_property(QUENTIER_ALL_INCLUDE_DIRS GLOBAL PROPERTY QUENTIER_ALL_INCLUDE_DIRS)
-list(APPEND QUENTIER_ALL_INCLUDE_DIRS "${LIBQUENTIER_INCLUDE_DIRS}")
 set_property(GLOBAL PROPERTY QUENTIER_ALL_INCLUDE_DIRS ${QUENTIER_ALL_INCLUDE_DIRS})
 
 get_property(QUENTIER_ALL_HEADERS GLOBAL PROPERTY QUENTIER_ALL_HEADERS)
@@ -1308,18 +1186,7 @@ foreach(QM_FILE ${QUENTIER_QM_FILES})
           " COMPONENT Runtime)
 endforeach()
 
-if(APPLE)
-  # install libquentier's translations into the app bundle
-  install(CODE "
-          set(LIBQUENTIER_TRANSLATIONS_SEARCH_PATH \"${LIBQUENTIER_INCLUDE_DIRS}/../share/libquentier/translations\")
-          file(GLOB LIBQUENTIER_TRANSLATION_FILES \"\${LIBQUENTIER_TRANSLATIONS_SEARCH_PATH}/libquentier_*.qm\")
-          foreach(LIBQUENTIER_TRANSLATION_FILE \${LIBQUENTIER_TRANSLATION_FILES})
-            get_filename_component(LIBQUENTIER_TRANSLATION_FILE_BASE_NAME \"\${LIBQUENTIER_TRANSLATION_FILE}\" NAME)
-            message(STATUS \"Installing: \$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/quentier.app/Contents/Resources/translations/libquentier/\${LIBQUENTIER_TRANSLATION_FILE_BASE_NAME}\")
-            file(COPY \"\${LIBQUENTIER_TRANSLATION_FILE}\" DESTINATION \"\$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/quentier.app/Contents/Resources/translations/libquentier/\${LIBQUENTIER_TRANSLATION_FILE_BASE_NAME}\")
-          endforeach()
-          " COMPONENT Runtime)
-elseif(WIN32)
+if(WIN32)
   # install libquentier's translations into the app's installation prefix
   install(CODE "
           set(LIBQUENTIER_TRANSLATIONS_SEARCH_PATH \"${LIBQUENTIER_INCLUDE_DIRS}/../share/libquentier/translations\")
