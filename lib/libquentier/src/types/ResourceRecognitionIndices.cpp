@@ -1,0 +1,196 @@
+/*
+ * Copyright 2016-2020 Dmitry Ivanov
+ *
+ * This file is part of libquentier
+ *
+ * libquentier is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, version 3 of the License.
+ *
+ * libquentier is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#include <quentier/types/ResourceRecognitionIndices.h>
+#include <quentier/utility/Compat.h>
+
+#include "data/ResourceRecognitionIndicesData.h"
+
+namespace quentier {
+
+ResourceRecognitionIndices::ResourceRecognitionIndices() :
+    Printable(), d(new ResourceRecognitionIndicesData)
+{}
+
+ResourceRecognitionIndices::ResourceRecognitionIndices(
+    const ResourceRecognitionIndices & other) :
+    Printable(),
+    d(other.d)
+{}
+
+ResourceRecognitionIndices::ResourceRecognitionIndices(
+    const QByteArray & rawRecognitionIndicesData) :
+    d(new ResourceRecognitionIndicesData)
+{
+    d->setData(rawRecognitionIndicesData);
+}
+
+ResourceRecognitionIndices & ResourceRecognitionIndices::operator=(
+    const ResourceRecognitionIndices & other)
+{
+    if (this != &other) {
+        d = other.d;
+    }
+
+    return *this;
+}
+
+ResourceRecognitionIndices::~ResourceRecognitionIndices() {}
+
+bool ResourceRecognitionIndices::isNull() const
+{
+    return d->m_isNull;
+}
+
+bool ResourceRecognitionIndices::isValid() const
+{
+    return d->isValid();
+}
+
+QString ResourceRecognitionIndices::objectId() const
+{
+    return d->m_objectId;
+}
+
+QString ResourceRecognitionIndices::objectType() const
+{
+    return d->m_objectType;
+}
+
+QString ResourceRecognitionIndices::recoType() const
+{
+    return d->m_recoType;
+}
+
+QString ResourceRecognitionIndices::engineVersion() const
+{
+    return d->m_engineVersion;
+}
+
+QString ResourceRecognitionIndices::docType() const
+{
+    return d->m_docType;
+}
+
+QString ResourceRecognitionIndices::lang() const
+{
+    return d->m_lang;
+}
+
+int ResourceRecognitionIndices::objectHeight() const
+{
+    return d->m_objectHeight;
+}
+
+int ResourceRecognitionIndices::objectWidth() const
+{
+    return d->m_objectWidth;
+}
+
+QVector<ResourceRecognitionIndexItem> ResourceRecognitionIndices::items() const
+{
+    return d->m_items;
+}
+
+bool ResourceRecognitionIndices::setData(
+    const QByteArray & rawRecognitionIndicesData)
+{
+    return d->setData(rawRecognitionIndicesData);
+}
+
+QTextStream & ResourceRecognitionIndices::print(QTextStream & strm) const
+{
+    strm << "ResourceRecognitionIndices: {\n";
+
+    if (isNull()) {
+        strm << "  <null>\n};\n";
+        return strm;
+    }
+
+    if (!d->m_objectId.isEmpty()) {
+        strm << "  object id = " << d->m_objectId << ";\n";
+    }
+    else {
+        strm << "  object id is not set;\n";
+    }
+
+    if (!d->m_objectType.isEmpty()) {
+        strm << "  object type = " << d->m_objectType << ";\n";
+    }
+    else {
+        strm << "  object type is not set;\n";
+    }
+
+    if (!d->m_recoType.isEmpty()) {
+        strm << "  reco type = " << d->m_recoType << ";\n";
+    }
+    else {
+        strm << "  reco type is not set;\n";
+    }
+
+    if (!d->m_engineVersion.isEmpty()) {
+        strm << "  engine version = " << d->m_engineVersion << ";\n";
+    }
+    else {
+        strm << "  engine version is not set;\n";
+    }
+
+    if (!d->m_docType.isEmpty()) {
+        strm << "  doc type = " << d->m_docType << ";\n";
+    }
+    else {
+        strm << "  doc type is not set;\n";
+    }
+
+    if (!d->m_lang.isEmpty()) {
+        strm << "  lang = " << d->m_lang << ";\n";
+    }
+    else {
+        strm << "  lang is not set;\n";
+    }
+
+    if (d->m_objectHeight >= 0) {
+        strm << "  object height = " << d->m_objectHeight << ";\n";
+    }
+    else {
+        strm << "  object height is not set;\n";
+    }
+
+    if (d->m_objectWidth >= 0) {
+        strm << "  object width = " << d->m_objectWidth << ";\n";
+    }
+    else {
+        strm << "  object width is not set;\n";
+    }
+
+    if (!d->m_items.isEmpty()) {
+        strm << "  recognition items: \n";
+        for (const auto & item: qAsConst(d->m_items)) {
+            strm << item << "\n";
+        }
+        strm << "\n";
+    }
+    else {
+        strm << "  no recognition items are set;\n";
+    }
+
+    strm << "};\n";
+    return strm;
+}
+
+} // namespace quentier
