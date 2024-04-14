@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.5.1)
 
 SET_POLICIES()
 
+add_subdirectory(libquentier)
 add_subdirectory(account)
 add_subdirectory(delegate)
 add_subdirectory(dialog)

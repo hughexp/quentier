@@ -12,7 +12,7 @@ include(QuentierCompilerSettings)
 include(QuentierAdditionalCompilerWarnings)
 include(QuentierLinkerSettings)
 include(QuentierSetupQt)
-include(QuentierUpdateTranslations)
+# include(QuentierUpdateTranslations)
 include(QuentierFindQEverCloud)
 include(QuentierFindLibquentier)
 include(QuentierFindBoost)
@@ -299,7 +299,7 @@ set(QUENTIER_TR_FILES
 set(QUENTIER_QM_FILES "")
 get_property(QUENTIER_TRANSLATABLE_SOURCES GLOBAL PROPERTY QUENTIER_TRANSLATABLE_SOURCES)
 get_property(QUENTIER_TRANSLATABLE_FORMS GLOBAL PROPERTY QUENTIER_TRANSLATABLE_FORMS)
-update_translation("${QUENTIER_TRANSLATABLE_SOURCES}" "${QUENTIER_TRANSLATABLE_FORMS}" "${QUENTIER_TR_FILES}")
+# update_translation("${QUENTIER_TRANSLATABLE_SOURCES}" "${QUENTIER_TRANSLATABLE_FORMS}" "${QUENTIER_TR_FILES}")
 
 # install translations
 foreach(QM_FILE ${QUENTIER_QM_FILES})

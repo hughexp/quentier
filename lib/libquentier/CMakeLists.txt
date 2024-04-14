@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5.1)
 
-set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
-set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/sanitizers ${CMAKE_MODULE_PATH})
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake/modules/sanitizers ${CMAKE_MODULE_PATH})
 
 include(LibquentierCMakePolicies)
 SET_POLICIES()
@@ -35,8 +35,8 @@ include(PrependPath)
 find_package(Sanitizers)
 
 include_directories(
-  ${CMAKE_CURRENT_SOURCE_DIR}/headers
-  ${CMAKE_CURRENT_SOURCE_DIR}/src)
+  ${CMAKE_CURRENT_LIST_DIR}/headers
+  ${CMAKE_CURRENT_LIST_DIR}/src)
 
 set(THIRDPARTY_LIBS ${QEVERCLOUD_LIBRARIES})
 list(APPEND THIRDPARTY_LIBS ${TIDY_HTML5_LIBRARIES})
@@ -712,7 +712,7 @@ endif()
 
 set(LIBNAME "lib${LIBQUENTIER_QT_VERSION}quentier${LIBQUENTIER_LIBNAME_SUFFIX}")
 
-add_library(${LIBNAME} SHARED
+add_library(${LIBNAME} STATIC
             ${${PROJECT_NAME}_HEADERS}
             ${${PROJECT_NAME}_SOURCES}
             ${${PROJECT_NAME}_RESOURCES_RCC}
@@ -868,8 +868,8 @@ include(SetupClangFormat)
 include(SetupClangTidy)
 
 # set Doxygen documentation properties
-set(DOXY_INPUT "${CMAKE_CURRENT_SOURCE_DIR}/headers ${CMAKE_CURRENT_SOURCE_DIR}/README.md")
-set(DOXY_USE_MDFILE_AS_MAINPAGE "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
+set(DOXY_INPUT "${CMAKE_CURRENT_LIST_DIR}/headers ${CMAKE_CURRENT_LIST_DIR}/README.md")
+set(DOXY_USE_MDFILE_AS_MAINPAGE "${CMAKE_CURRENT_LIST_DIR}/README.md")
 set(DOXY_RECURSIVE "YES")
 set(DOXY_PROJECT_NAME ${PROJECT_NAME})
 set(DOXY_PROJECT_NUMBER "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
@@ -878,8 +878,8 @@ set(DOXY_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/doc")
 ADD_DOCUMENTATION(doc Doxyfile)
 
 # modifying sources list with absolute paths for the static analyzer
-prepend_path(${PROJECT_NAME}_SOURCES "${${PROJECT_NAME}_SOURCES}" ${CMAKE_CURRENT_SOURCE_DIR})
-prepend_path(TEST_SOURCES "${TEST_SOURCES}" ${CMAKE_CURRENT_SOURCE_DIR})
+prepend_path(${PROJECT_NAME}_SOURCES "${${PROJECT_NAME}_SOURCES}" ${CMAKE_CURRENT_LIST_DIR})
+prepend_path(TEST_SOURCES "${TEST_SOURCES}" ${CMAKE_CURRENT_LIST_DIR})
 
 # collect the list of sources to be checked by the static analyzer
 set(LIBQUENTIER_CPPCHECKABLE_SOURCES ${${PROJECT_NAME}_SOURCES})
@@ -929,11 +929,11 @@ file(COPY cmake/modules/LibquentierFindOtherDependenciesQt5.cmake DESTINATION ${
 file(RENAME ${PROJECT_BINARY_DIR}/LibquentierFindOtherDependenciesQt5.cmake ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindOtherDependencies.cmake)
 
 # install shared library
-install(TARGETS ${LIBNAME}
-        EXPORT Libquentier-${LIBQUENTIER_QT_VERSION}LibraryDepends
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+# install(TARGETS ${LIBNAME}
+#         EXPORT Libquentier-${LIBQUENTIER_QT_VERSION}LibraryDepends
+#         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+#         LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+#         ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
 # install headers
 if(BUILD_WITH_NOTE_EDITOR)
@@ -996,7 +996,7 @@ install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}ConfigV
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 enable_testing()
 
-add_custom_target(check COMMAND "${CMAKE_CTEST_COMMAND}" "--verbose")
+# add_custom_target(check COMMAND "${CMAKE_CTEST_COMMAND}" "--verbose")
 
 set(LIBQUENTIER_CPPCHECKABLE_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}/headers")
 include(LibquentierSetupCppCheck)

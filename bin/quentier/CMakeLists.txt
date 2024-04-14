@@ -207,8 +207,8 @@ if(CREATE_BUNDLE AND (${CMAKE_SYSTEM_NAME} MATCHES "Linux"))
   include(QuentierFindLinuxdeployqt)
 endif()
 
-include(QuentierCreateBundle)
-CreateQuentierBundle()
+# include(QuentierCreateBundle)
+# CreateQuentierBundle()
 
 set(TRANSLATABLE_SOURCES
     ${HEADERS}
