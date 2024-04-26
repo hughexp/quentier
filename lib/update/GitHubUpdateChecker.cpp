@@ -21,8 +21,8 @@
 #include <lib/network/NetworkReplyFetcher.h>
 #include <lib/update/UpdateInfo.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 #include <QDateTime>
 #include <QJsonArray>

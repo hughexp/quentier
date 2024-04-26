@@ -18,7 +18,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_USER_STORE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_USER_STORE_H
 
-#include <quentier/synchronization/IUserStore.h>
+#include <lib/libquentier/headers/quentier/synchronization/IUserStore.h>
 
 namespace quentier {
 

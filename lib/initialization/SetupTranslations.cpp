@@ -20,9 +20,9 @@
 
 #include <lib/preferences/keys/Translations.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 #include <QDir>
 #include <QFileInfoList>

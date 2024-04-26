@@ -23,9 +23,9 @@
 
 #include <lib/model/common/NewItemNameGenerator.hpp>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/UidGenerator.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/UidGenerator.h>
 
 #include <algorithm>
 #include <limits>

@@ -20,11 +20,11 @@
 
 #include "SynchronizationShared.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/QuentierCheckPtr.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierCheckPtr.h>
 
 namespace quentier {
 

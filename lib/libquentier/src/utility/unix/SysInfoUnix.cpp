@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
 
 #include "../SysInfo_p.h"
 

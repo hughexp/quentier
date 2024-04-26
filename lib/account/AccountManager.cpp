@@ -24,12 +24,12 @@
 
 #include <lib/preferences/keys/Account.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/StandardPaths.h>
-#include <quentier/utility/SuppressWarnings.h>
-#include <quentier/utility/System.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/utility/System.h>
 
 #include <QDebug>
 #include <QXmlStreamWriter>

@@ -19,9 +19,9 @@
 #ifndef QUENTIER_LIB_WIDGET_NOTE_TAGS_WIDGET_H
 #define QUENTIER_LIB_WIDGET_NOTE_TAGS_WIDGET_H
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/utility/StringUtils.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QHash>
 #include <QPointer>

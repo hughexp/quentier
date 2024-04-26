@@ -23,9 +23,9 @@
 #include <lib/preferences/keys/Files.h>
 #include <lib/preferences/keys/PanelColors.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
 
 #include <QColorDialog>
 #include <QDoubleSpinBox>

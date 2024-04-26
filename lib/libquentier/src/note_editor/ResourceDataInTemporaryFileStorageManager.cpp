@@ -20,13 +20,13 @@
 
 #include "NoteEditorLocalStorageBroker.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/FileSystem.h>
-#include <quentier/utility/Size.h>
-#include <quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystem.h>
+#include <lib/libquentier/headers/quentier/utility/Size.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
 
 #include <QCryptographicHash>
 #include <QDesktopServices>

@@ -24,7 +24,7 @@
 #include "NotebookItem.h"
 #include "StackItem.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QDataStream>
 #include <QDebug>

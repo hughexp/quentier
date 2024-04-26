@@ -21,9 +21,9 @@
 #include <lib/preferences/keys/Files.h>
 #include <lib/preferences/keys/Synchronization.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Account.h>
-#include <quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
 
 #include <QUrl>
 

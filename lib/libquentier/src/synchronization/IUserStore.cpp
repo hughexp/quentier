@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/synchronization/IUserStore.h>
+#include <lib/libquentier/headers/quentier/synchronization/IUserStore.h>
 
 #include "UserStore.h"
 

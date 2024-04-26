@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_NETWORK_NETWORK_REPLY_FETCHER_H
 #define QUENTIER_LIB_NETWORK_NETWORK_REPLY_FETCHER_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QNetworkReply>
 #include <QObject>

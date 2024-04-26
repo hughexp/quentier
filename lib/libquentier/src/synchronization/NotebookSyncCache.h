@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_NOTEBOOK_SYNC_CACHE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_NOTEBOOK_SYNC_CACHE_H
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
 
 #include <QHash>
 #include <QObject>

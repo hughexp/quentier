@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_LOCAL_STORAGE_LOCAL_STORAGE_CACHE_MANAGER_H
 #define LIB_QUENTIER_LOCAL_STORAGE_LOCAL_STORAGE_CACHE_MANAGER_H
 
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <memory>
 

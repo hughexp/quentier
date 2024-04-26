@@ -18,9 +18,9 @@
 
 #include "data/ResourceData.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/Checks.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/Checks.h>
 
 #include <QFileInfo>
 #include <QMimeDatabase>

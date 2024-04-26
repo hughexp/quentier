@@ -16,8 +16,8 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/types/RegisterMetatypes.h>
-#include <quentier/utility/Initialize.h>
+#include <lib/libquentier/headers/quentier/types/RegisterMetatypes.h>
+#include <lib/libquentier/headers/quentier/utility/Initialize.h>
 #include <quentier/utility/VersionInfo.h>
 
 #if LIB_QUENTIER_HAS_NOTE_EDITOR

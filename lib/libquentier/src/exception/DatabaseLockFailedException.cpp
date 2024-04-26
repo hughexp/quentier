@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/exception/DatabaseLockFailedException.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseLockFailedException.h>
 
 namespace quentier {
 

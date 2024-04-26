@@ -18,7 +18,7 @@
 
 #include "data/SharedNoteData.h"
 
-#include <quentier/types/SharedNote.h>
+#include <lib/libquentier/headers/quentier/types/SharedNote.h>
 
 namespace quentier {
 

@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_NOTE_EDITOR_RESOURCE_DATA_IN_TEMPORARY_FILE_STORAGE_MANAGER_H
 #define LIB_QUENTIER_NOTE_EDITOR_RESOURCE_DATA_IN_TEMPORARY_FILE_STORAGE_MANAGER_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/FileSystemWatcher.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystemWatcher.h>
 
 #include <QHash>
 #include <QObject>

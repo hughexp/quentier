@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_UTILITY_START_AT_LOGIN_H
 #define QUENTIER_LIB_UTILITY_START_AT_LOGIN_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <utility>
 

@@ -24,9 +24,9 @@
 #include <lib/preferences/keys/SidePanelsFiltering.h>
 #include <lib/widget/NoteFiltersManager.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
 
 #include <QContextMenuEvent>
 #include <QMenu>

@@ -16,12 +16,12 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/note_editor/NoteEditor.h>
+#include <lib/libquentier/headers/quentier/note_editor/NoteEditor.h>
 
 #include "NoteEditor_p.h"
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/note_editor/INoteEditorBackend.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/note_editor/INoteEditorBackend.h>
 
 #include <QColor>
 #include <QCoreApplication>

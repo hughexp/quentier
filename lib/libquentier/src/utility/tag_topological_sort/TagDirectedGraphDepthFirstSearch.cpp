@@ -18,7 +18,7 @@
 
 #include "TagDirectedGraphDepthFirstSearch.h"
 
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 namespace quentier {
 

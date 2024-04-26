@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_UTILITY_EVENT_LOOP_WITH_EXIT_STATUS_H
 #define LIB_QUENTIER_UTILITY_EVENT_LOOP_WITH_EXIT_STATUS_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QEventLoop>
 

@@ -19,8 +19,8 @@
 #include "TagSyncConflictResolver.h"
 #include "TagSyncCache.h"
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 namespace quentier {
 

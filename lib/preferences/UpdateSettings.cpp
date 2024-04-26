@@ -23,7 +23,7 @@
 
 #include <lib/utility/VersionInfo.h>
 
-#include <quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
 
 #include <QCoreApplication>
 #include <QDebug>

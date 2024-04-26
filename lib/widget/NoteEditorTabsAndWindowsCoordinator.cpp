@@ -26,14 +26,14 @@
 #include <lib/preferences/keys/Files.h>
 #include <lib/preferences/keys/NoteEditor.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/note_editor/NoteEditor.h>
-#include <quentier/note_editor/SpellChecker.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/EventLoopWithExitStatus.h>
-#include <quentier/utility/FileIOProcessorAsync.h>
-#include <quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/note_editor/NoteEditor.h>
+#include <lib/libquentier/headers/quentier/note_editor/SpellChecker.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/EventLoopWithExitStatus.h>
+#include <lib/libquentier/headers/quentier/utility/FileIOProcessorAsync.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
 
 #include <QApplication>
 #include <QCloseEvent>

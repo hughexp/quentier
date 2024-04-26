@@ -16,12 +16,12 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/local_storage/NoteSearchQuery.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/SuppressWarnings.h>
-#include <quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/local_storage/NoteSearchQuery.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
 
 #include <QMetaMethod>
 

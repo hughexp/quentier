@@ -18,7 +18,7 @@
 
 #include "LoadDependencies.h"
 
-#include <quentier/utility/VersionInfo.h>
+#include <lib/libquentier/headers/quentier/utility/VersionInfo.h>
 
 #include <QCoreApplication>
 #include <QDebug>

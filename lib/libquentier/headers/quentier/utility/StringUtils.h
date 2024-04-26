@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_STRING_UTILS_H
 #define LIB_QUENTIER_UTILITY_STRING_UTILS_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QSet>
 #include <QString>

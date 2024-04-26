@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_WIDGET_FILTER_BY_SAVED_SEARCH_WIDGET_H
 #define QUENTIER_LIB_WIDGET_FILTER_BY_SAVED_SEARCH_WIDGET_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QComboBox>
 #include <QPointer>

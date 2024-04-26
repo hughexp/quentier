@@ -19,7 +19,7 @@
 #include "FilterBySearchStringWidget.h"
 #include "ui_FilterBySearchStringWidget.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 namespace quentier {
 

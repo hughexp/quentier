@@ -21,14 +21,14 @@
 
 #include "SynchronizationShared.h"
 
-#include <quentier/local_storage/LocalStorageManager.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/SavedSearch.h>
-#include <quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManager.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
 
-#include <quentier/synchronization/INoteStore.h>
+#include <lib/libquentier/headers/quentier/synchronization/INoteStore.h>
 
 #include <QObject>
 

@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_LOGGING_QUENTIER_LOGGER_H
 #define LIB_QUENTIER_LOGGING_QUENTIER_LOGGER_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QDebug>
 #include <QRegularExpression>

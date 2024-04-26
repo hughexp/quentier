@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_LOCAL_STORAGE_TRANSACTION_H
 #define LIB_QUENTIER_LOCAL_STORAGE_TRANSACTION_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QSqlDatabase>
 

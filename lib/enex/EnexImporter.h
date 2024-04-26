@@ -19,11 +19,11 @@
 #ifndef QUENTIER_LIB_ENEX_ENEX_IMPORTER_H
 #define QUENTIER_LIB_ENEX_ENEX_IMPORTER_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/Tag.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QHash>
 #include <QObject>

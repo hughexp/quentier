@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/ShortcutManager.h>
+#include <lib/libquentier/headers/quentier/utility/ShortcutManager.h>
 
 #include "ShortcutManager_p.h"
 

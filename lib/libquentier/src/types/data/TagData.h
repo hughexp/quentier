@@ -21,7 +21,7 @@
 
 #include "FavoritableDataElementData.h"
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

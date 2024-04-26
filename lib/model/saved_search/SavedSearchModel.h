@@ -26,10 +26,10 @@
 
 #include <lib/model/common/AbstractItemModel.h>
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/types/Account.h>
-#include <quentier/types/SavedSearch.h>
-#include <quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
 
 #include <QAbstractItemModel>
 #include <QSet>

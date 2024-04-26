@@ -19,8 +19,8 @@
 #ifndef QUENTIER_LIB_DIALOG_EDIT_NOTE_DIALOG_H
 #define QUENTIER_LIB_DIALOG_EDIT_NOTE_DIALOG_H
 
-#include <quentier/types/Note.h>
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QDialog>
 #include <QPointer>

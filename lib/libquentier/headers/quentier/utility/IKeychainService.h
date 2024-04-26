@@ -19,9 +19,9 @@
 #ifndef LIB_QUENTIER_UTILITY_I_KEYCHAIN_SERVICE_H
 #define LIB_QUENTIER_UTILITY_I_KEYCHAIN_SERVICE_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/ForwardDeclarations.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/ForwardDeclarations.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QObject>
 #include <QUuid>

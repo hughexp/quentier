@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_INITIALIZATION_COMMAND_LINE_PARSER_H
 #define QUENTIER_LIB_INITIALIZATION_COMMAND_LINE_PARSER_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QHash>
 #include <QString>

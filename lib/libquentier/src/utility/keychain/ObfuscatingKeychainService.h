@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_UTILITY_KEYCHAIN_OBFUSCATED_KEYCHAIN_SERVICE_H
 #define LIB_QUENTIER_UTILITY_KEYCHAIN_OBFUSCATED_KEYCHAIN_SERVICE_H
 
-#include <quentier/utility/EncryptionManager.h>
-#include <quentier/utility/IKeychainService.h>
+#include <lib/libquentier/headers/quentier/utility/EncryptionManager.h>
+#include <lib/libquentier/headers/quentier/utility/IKeychainService.h>
 
 namespace quentier {
 

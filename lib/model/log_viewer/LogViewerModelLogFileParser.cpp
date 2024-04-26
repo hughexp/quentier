@@ -20,9 +20,9 @@
 
 #include <lib/preferences/keys/Logging.h>
 
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
 
 #include <QCoreApplication>
 #include <QDebug>

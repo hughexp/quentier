@@ -18,10 +18,10 @@
 
 #include "data/NotebookData.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/SharedNotebook.h>
-#include <quentier/types/User.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/SharedNotebook.h>
+#include <lib/libquentier/headers/quentier/types/User.h>
 
 namespace quentier {
 

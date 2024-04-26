@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_NOTEBOOK_SYNC_CONFLICT_RESOLVER_H
 #define LIB_QUENTIER_SYNCHRONIZATION_NOTEBOOK_SYNC_CONFLICT_RESOLVER_H
 
-#include <quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

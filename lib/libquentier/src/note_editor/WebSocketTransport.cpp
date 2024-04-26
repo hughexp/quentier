@@ -18,7 +18,7 @@
 
 #include "WebSocketTransport.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QJsonDocument>
 #include <QJsonObject>

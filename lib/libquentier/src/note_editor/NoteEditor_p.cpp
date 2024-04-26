@@ -69,15 +69,15 @@
 #include "undo_stack/ToDoCheckboxAutomaticInsertionUndoCommand.h"
 #include "undo_stack/ToDoCheckboxUndoCommand.h"
 
-#include <quentier/local_storage/LocalStorageManager.h>
-#include <quentier/note_editor/SpellChecker.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Checks.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/EventLoopWithExitStatus.h>
-#include <quentier/utility/FileSystem.h>
-#include <quentier/utility/Size.h>
-#include <quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManager.h>
+#include <lib/libquentier/headers/quentier/note_editor/SpellChecker.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Checks.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/EventLoopWithExitStatus.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystem.h>
+#include <lib/libquentier/headers/quentier/utility/Size.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
 
 #include <QDesktopServices>
 #include <QFileDialog>

@@ -46,9 +46,9 @@ using quentier::ShortcutSettingsWidget;
 #include <lib/utility/ColorCodeValidator.h>
 #include <lib/utility/StartAtLogin.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/ShortcutManager.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/ShortcutManager.h>
 
 #include <QColorDialog>
 #include <QDir>

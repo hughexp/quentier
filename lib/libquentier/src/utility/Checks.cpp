@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/Checks.h>
+#include <lib/libquentier/headers/quentier/utility/Checks.h>
 
 #include <qt5qevercloud/generated/Constants.h>
 

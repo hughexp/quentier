@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_QUENTIER_APPLICATION_H
 #define LIB_QUENTIER_UTILITY_QUENTIER_APPLICATION_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QApplication>
 

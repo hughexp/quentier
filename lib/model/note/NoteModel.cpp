@@ -18,10 +18,10 @@
 
 #include "NoteModel.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/Size.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/Size.h>
 
 #include <QImage>
 

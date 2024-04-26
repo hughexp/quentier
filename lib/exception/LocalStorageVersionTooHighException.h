@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_EXCEPTION_LOCAL_STORAGE_VERSION_TOO_HIGH_EXCEPTION_H
 #define QUENTIER_LIB_EXCEPTION_LOCAL_STORAGE_VERSION_TOO_HIGH_EXCEPTION_H
 
-#include <quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
 
 namespace quentier {
 

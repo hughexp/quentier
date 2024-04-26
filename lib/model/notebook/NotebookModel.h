@@ -28,9 +28,9 @@
 
 #include <lib/model/common/AbstractItemModel.h>
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/types/Account.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QFlags>
 #include <QHash>

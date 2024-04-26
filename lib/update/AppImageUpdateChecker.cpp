@@ -20,7 +20,7 @@
 #include "AppImageUpdateProvider.h"
 #include "appimageupdaterbridge_enums.hpp"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QCoreApplication>
 

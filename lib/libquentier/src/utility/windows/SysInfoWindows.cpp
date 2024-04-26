@@ -18,7 +18,7 @@
 
 #include "../SysInfo_p.h"
 
-#include <quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
 
 #include <QMutexLocker>
 #include <QString>

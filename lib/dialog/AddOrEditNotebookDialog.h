@@ -21,7 +21,7 @@
 
 #include <lib/model/notebook/NotebookModel.h>
 
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QDialog>
 #include <QPointer>

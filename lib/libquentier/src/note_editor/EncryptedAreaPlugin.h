@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_NOTE_EDITOR_ENCRYPTED_AREA_PLUGIN_H
 #define LIB_QUENTIER_NOTE_EDITOR_ENCRYPTED_AREA_PLUGIN_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QWidget>
 

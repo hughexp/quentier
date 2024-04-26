@@ -22,16 +22,16 @@
 #include "GenericResourceDisplayWidget.h"
 #include "NoteEditor_p.h"
 
-#include <quentier/enml/DecryptedTextManager.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/EncryptionManager.h>
-#include <quentier/utility/QuentierCheckPtr.h>
-#include <quentier/utility/Size.h>
-#include <quentier/utility/StandardPaths.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/enml/DecryptedTextManager.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/EncryptionManager.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierCheckPtr.h>
+#include <lib/libquentier/headers/quentier/utility/Size.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QDir>
 #include <QFileIconProvider>

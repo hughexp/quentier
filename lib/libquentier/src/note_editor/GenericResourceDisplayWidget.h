@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_NOTE_EDITOR_GENERIC_RESOURCE_DISPLAY_WIDGET_H
 #define LIB_QUENTIER_NOTE_EDITOR_GENERIC_RESOURCE_DISPLAY_WIDGET_H
 
-#include <quentier/types/Account.h>
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QUuid>
 #include <QWidget>

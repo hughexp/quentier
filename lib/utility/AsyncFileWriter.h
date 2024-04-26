@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_UTILITY_ASYNC_FILE_WRITER_H
 #define QUENTIER_LIB_UTILITY_ASYNC_FILE_WRITER_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QObject>
 #include <QRunnable>

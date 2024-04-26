@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/local_storage/NoteSearchQuery.h>
+#include <lib/libquentier/headers/quentier/local_storage/NoteSearchQuery.h>
 
 #include "NoteSearchQueryData.h"
 

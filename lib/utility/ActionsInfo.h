@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_UTILITY_ACTIONS_INFO_H
 #define QUENTIER_LIB_UTILITY_ACTIONS_INFO_H
 
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QHash>
 #include <QKeySequence>

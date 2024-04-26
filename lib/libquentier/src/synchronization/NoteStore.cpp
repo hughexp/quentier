@@ -20,12 +20,12 @@
 
 #include "ExceptionHandlingHelpers.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/Resource.h>
-#include <quentier/types/SavedSearch.h>
-#include <quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
 
 namespace quentier {
 

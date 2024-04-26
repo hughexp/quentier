@@ -37,8 +37,8 @@
 
 // Doh, Qt Designer's inability to work with namespaces in the expected way
 // is deeply disappointing
-#include <quentier/note_editor/INoteEditorBackend.h>
-#include <quentier/note_editor/NoteEditor.h>
+#include <lib/libquentier/headers/quentier/note_editor/INoteEditorBackend.h>
+#include <lib/libquentier/headers/quentier/note_editor/NoteEditor.h>
 
 using quentier::ColorPickerToolButton;
 using quentier::FindAndReplaceWidget;
@@ -48,13 +48,13 @@ using quentier::NoteTagsWidget;
 
 #include "ui_NoteEditorWidget.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/note_editor/SpellChecker.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/EventLoopWithExitStatus.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/note_editor/SpellChecker.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/EventLoopWithExitStatus.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
 
 #include <QColor>
 #include <QDateTime>

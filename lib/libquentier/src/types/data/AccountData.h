@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_TYPES_DATA_ACCOUNT_DATA_H
 #define LIB_QUENTIER_TYPES_DATA_ACCOUNT_DATA_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QSharedData>
 

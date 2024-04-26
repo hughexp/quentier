@@ -19,9 +19,9 @@
 #ifndef QUENTIER_LIB_WIDGET_ABSTRACT_FILTER_BY_MODEL_ITEM_WIDGET_H
 #define QUENTIER_LIB_WIDGET_ABSTRACT_FILTER_BY_MODEL_ITEM_WIDGET_H
 
-#include <quentier/types/Account.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QPointer>
 #include <QWidget>

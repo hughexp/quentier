@@ -19,9 +19,9 @@
 #ifndef QUENTIER_LIB_INITIALIZATION_DEFAULT_ACCOUNT_FIRST_NOTEBOOK_AND_NOTE_CREATOR_H
 #define QUENTIER_LIB_INITIALIZATION_DEFAULT_ACCOUNT_FIRST_NOTEBOOK_AND_NOTE_CREATOR_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
 
 #include <QObject>
 #include <QPointer>

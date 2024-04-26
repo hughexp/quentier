@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_EXCEPTION_EMPTY_DATA_ELEMENT_EXCEPTION_H
 #define LIB_QUENTIER_EXCEPTION_EMPTY_DATA_ELEMENT_EXCEPTION_H
 
-#include <quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
 
 namespace quentier {
 

@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_NOTE_EDITOR_GENERIC_RESOURCE_IMAGE_MANAGER_H
 #define LIB_QUENTIER_NOTE_EDITOR_GENERIC_RESOURCE_IMAGE_MANAGER_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
 
 #include <QObject>
 #include <QUuid>

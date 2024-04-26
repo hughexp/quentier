@@ -19,8 +19,8 @@
 #ifndef QUENTIER_LIB_MODEL_TAG_CACHE_H
 #define QUENTIER_LIB_MODEL_TAG_CACHE_H
 
-#include <quentier/types/Tag.h>
-#include <quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
 
 namespace quentier {
 

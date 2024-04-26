@@ -18,7 +18,7 @@
 
 #include "AuthenticationManager_p.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #if !QEVERCLOUD_HAS_OAUTH
 #error "The used QEverCloud library has no OAuth support"

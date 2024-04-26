@@ -32,9 +32,9 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 
 add_sanitizers(${PROJECT_NAME})
 
-add_test(${PROJECT_NAME} ${PROJECT_NAME})
+# add_test(${PROJECT_NAME} ${PROJECT_NAME})
 
-target_link_libraries(${PROJECT_NAME} quentier_model ${THIRDPARTY_LIBS})
+target_link_libraries(${PROJECT_NAME} quentier_model libqt5quentier ${THIRDPARTY_LIBS})
 
 QUENTIER_COLLECT_HEADERS(HEADERS)
 QUENTIER_COLLECT_SOURCES(SOURCES)

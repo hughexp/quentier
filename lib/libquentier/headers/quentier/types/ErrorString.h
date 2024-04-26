@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_TYPES_ERROR_STRING_H
 #define LIB_QUENTIER_TYPES_ERROR_STRING_H
 
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QSharedDataPointer>
 

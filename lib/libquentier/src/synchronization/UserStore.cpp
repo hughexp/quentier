@@ -19,8 +19,8 @@
 #include "UserStore.h"
 #include "ExceptionHandlingHelpers.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/User.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/User.h>
 
 #define USER_STORE_REQUEST_TIMEOUT_MSEC (-1)
 

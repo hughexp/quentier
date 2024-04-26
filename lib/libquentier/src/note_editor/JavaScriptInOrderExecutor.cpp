@@ -18,7 +18,7 @@
 
 #include "JavaScriptInOrderExecutor.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #ifndef QUENTIER_USE_QT_WEB_ENGINE
 #include <QWebFrame>

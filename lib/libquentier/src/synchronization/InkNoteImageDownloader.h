@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_INK_NOTE_IMAGE_DOWNLOADER_H
 #define LIB_QUENTIER_SYNCHRONIZATION_INK_NOTE_IMAGE_DOWNLOADER_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QObject>
 #include <QRunnable>

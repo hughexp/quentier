@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/exception/LocalStorageCacheManagerException.h>
+#include <lib/libquentier/headers/quentier/exception/LocalStorageCacheManagerException.h>
 
 namespace quentier {
 

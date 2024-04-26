@@ -16,9 +16,9 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/SuppressWarnings.h>
-#include <quentier/utility/System.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/utility/System.h>
 
 #include <QDesktopServices>
 #include <QStandardPaths>

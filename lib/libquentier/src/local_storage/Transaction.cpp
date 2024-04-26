@@ -20,8 +20,8 @@
 
 #include "LocalStorageManager_p.h"
 
-#include <quentier/exception/DatabaseRequestException.h>
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseRequestException.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QSqlError>
 #include <QSqlQuery>

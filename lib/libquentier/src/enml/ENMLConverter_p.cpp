@@ -18,13 +18,13 @@
 
 #include "ENMLConverter_p.h"
 
-#include <quentier/enml/DecryptedTextManager.h>
-#include <quentier/enml/HTMLCleaner.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/UidGenerator.h>
+#include <lib/libquentier/headers/quentier/enml/DecryptedTextManager.h>
+#include <lib/libquentier/headers/quentier/enml/HTMLCleaner.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/UidGenerator.h>
 
 #include <QApplication>
 #include <QBrush>

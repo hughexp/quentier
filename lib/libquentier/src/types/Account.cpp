@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include "data/AccountData.h"
 

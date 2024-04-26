@@ -26,8 +26,8 @@
 #ifndef QUENTIER_DIALOGS_SHORTCUT_SETTINGS_WIDGET_H
 #define QUENTIER_DIALOGS_SHORTCUT_SETTINGS_WIDGET_H
 
-#include <quentier/types/Account.h>
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QHash>
 #include <QList>

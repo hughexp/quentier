@@ -19,9 +19,9 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_I_SYNC_STATE_STORAGE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_I_SYNC_STATE_STORAGE_H
 
-#include <quentier/synchronization/ForwardDeclarations.h>
-#include <quentier/types/Account.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/synchronization/ForwardDeclarations.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

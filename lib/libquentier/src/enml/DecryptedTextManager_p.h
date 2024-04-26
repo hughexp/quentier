@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_ENML_DECRYPTED_TEXT_MANAGER_P_H
 #define LIB_QUENTIER_ENML_DECRYPTED_TEXT_MANAGER_P_H
 
-#include <quentier/utility/EncryptionManager.h>
+#include <lib/libquentier/headers/quentier/utility/EncryptionManager.h>
 
 #include <QHash>
 #include <QtGlobal>

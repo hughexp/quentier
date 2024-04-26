@@ -23,8 +23,8 @@
 #include <lib/model/notebook/NotebookCache.h>
 #include <lib/model/tag/TagCache.h>
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QPointer>
 #include <QPrinter>

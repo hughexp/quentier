@@ -19,8 +19,8 @@
 #ifndef QUENTIER_LIB_VIEW_NOTE_LIST_VIEW_H
 #define QUENTIER_LIB_VIEW_NOTE_LIST_VIEW_H
 
-#include <quentier/types/Account.h>
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QListView>
 

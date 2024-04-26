@@ -19,9 +19,9 @@
 #ifndef LIB_QUENTIER_NOTE_EDITOR_I_NOTE_EDITOR_BACKEND_H
 #define LIB_QUENTIER_NOTE_EDITOR_I_NOTE_EDITOR_BACKEND_H
 
-#include <quentier/types/Note.h>
-#include <quentier/utility/Linkage.h>
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QPalette>
 #include <QPrinter>

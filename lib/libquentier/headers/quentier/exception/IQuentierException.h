@@ -20,8 +20,8 @@
 #define LIB_QUENTIER_EXCEPTION_I_QUENTIER_EXCEPTION_H
 
 #include <exception>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 namespace quentier {
 

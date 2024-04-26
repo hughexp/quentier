@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
 
 #include <QString>
 

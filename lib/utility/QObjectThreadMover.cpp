@@ -19,7 +19,7 @@
 #include "QObjectThreadMover.h"
 #include "QObjectThreadMover_p.h"
 
-#include <quentier/utility/EventLoopWithExitStatus.h>
+#include <lib/libquentier/headers/quentier/utility/EventLoopWithExitStatus.h>
 
 #include <QThread>
 #include <QTimer>

@@ -19,9 +19,9 @@
 #ifndef QUENTIER_LIB_ENEX_ENEX_EXPORTER_H
 #define QUENTIER_LIB_ENEX_ENEX_EXPORTER_H
 
-#include <quentier/local_storage/LocalStorageManager.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManager.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
 
 #include <QHash>
 #include <QObject>

@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_UTILITY_SHORTCUT_MANAGER_H
 #define LIB_QUENTIER_UTILITY_SHORTCUT_MANAGER_H
 
-#include <quentier/types/Account.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QKeySequence>
 #include <QObject>

@@ -19,8 +19,8 @@
 #ifndef QUENTIER_LIB_WIDGET_NOTE_FILTERS_MANAGER_H
 #define QUENTIER_LIB_WIDGET_NOTE_FILTERS_MANAGER_H
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/local_storage/NoteSearchQuery.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/local_storage/NoteSearchQuery.h>
 
 #include <QObject>
 #include <QPointer>

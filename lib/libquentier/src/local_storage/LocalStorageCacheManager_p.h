@@ -19,15 +19,15 @@
 #ifndef LIB_QUENTIER_LOCAL_STORAGE_LOCAL_STORAGE_CACHE_MANAGER_PRIVATE_H
 #define LIB_QUENTIER_LOCAL_STORAGE_LOCAL_STORAGE_CACHE_MANAGER_PRIVATE_H
 
-#include <quentier/local_storage/LocalStorageCacheManager.h>
-#include <quentier/types/LinkedNotebook.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/Resource.h>
-#include <quentier/types/SavedSearch.h>
-#include <quentier/types/Tag.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageCacheManager.h>
+#include <lib/libquentier/headers/quentier/types/LinkedNotebook.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 SAVE_WARNINGS
 // clang-format off

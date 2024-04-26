@@ -23,9 +23,9 @@
 #include <lib/model/favorites/FavoritesModel.h>
 #include <lib/model/note/NoteModel.h>
 
-#include <quentier/exception/IQuentierException.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
 
 namespace quentier {
 

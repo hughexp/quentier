@@ -23,10 +23,10 @@
 
 #include <lib/model/notebook/NotebookModel.h>
 
-#include <quentier/exception/IQuentierException.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/SysInfo.h>
-#include <quentier/utility/UidGenerator.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/utility/UidGenerator.h>
 
 namespace quentier {
 

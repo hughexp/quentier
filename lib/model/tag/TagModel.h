@@ -27,12 +27,12 @@
 
 #include <lib/model/common/AbstractItemModel.h>
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/types/Account.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/Tag.h>
-#include <quentier/utility/LRUCache.hpp>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QAbstractItemModel>
 #include <QHash>

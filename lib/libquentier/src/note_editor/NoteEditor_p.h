@@ -22,16 +22,16 @@
 #include "NoteEditorPage.h"
 #include "ResourceInfo.h"
 
-#include <quentier/enml/DecryptedTextManager.h>
-#include <quentier/enml/ENMLConverter.h>
-#include <quentier/note_editor/INoteEditorBackend.h>
-#include <quentier/note_editor/NoteEditor.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/Resource.h>
-#include <quentier/types/ResourceRecognitionIndices.h>
-#include <quentier/utility/EncryptionManager.h>
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/enml/DecryptedTextManager.h>
+#include <lib/libquentier/headers/quentier/enml/ENMLConverter.h>
+#include <lib/libquentier/headers/quentier/note_editor/INoteEditorBackend.h>
+#include <lib/libquentier/headers/quentier/note_editor/NoteEditor.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/types/ResourceRecognitionIndices.h>
+#include <lib/libquentier/headers/quentier/utility/EncryptionManager.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QColor>
 #include <QFont>

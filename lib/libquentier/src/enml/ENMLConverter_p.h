@@ -19,9 +19,9 @@
 #ifndef LIB_QUENTIER_ENML_ENML_CONVERTER_P_H
 #define LIB_QUENTIER_ENML_ENML_CONVERTER_P_H
 
-#include <quentier/enml/ENMLConverter.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/enml/ENMLConverter.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
 
 #include <QFlag>
 #include <QStringList>

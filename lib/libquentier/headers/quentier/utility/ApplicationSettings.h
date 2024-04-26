@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_APPLICATION_SETTINGS_H
 #define LIB_QUENTIER_UTILITY_APPLICATION_SETTINGS_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QSettings>
 

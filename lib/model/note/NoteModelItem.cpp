@@ -18,7 +18,7 @@
 
 #include "NoteModelItem.h"
 
-#include <quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
 
 namespace quentier {
 

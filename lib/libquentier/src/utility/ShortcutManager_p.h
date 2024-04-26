@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_SHORTCUT_MANAGER_PRIVATE_H
 #define LIB_QUENTIER_UTILITY_SHORTCUT_MANAGER_PRIVATE_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QKeySequence>
 #include <QObject>

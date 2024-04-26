@@ -19,9 +19,9 @@
 #ifndef QUENTIER_LIB_ACCOUNT_ACCOUNT_MANAGER_H
 #define QUENTIER_LIB_ACCOUNT_ACCOUNT_MANAGER_H
 
-#include <quentier/exception/IQuentierException.h>
-#include <quentier/types/Account.h>
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QDir>
 #include <QNetworkProxy>

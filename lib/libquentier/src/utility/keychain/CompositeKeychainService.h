@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_UTILITY_KEYCHAIN_COMPOSITE_KEYCHAIN_SERVICE_H
 #define LIB_QUENTIER_UTILITY_KEYCHAIN_COMPOSITE_KEYCHAIN_SERVICE_H
 
-#include <quentier/utility/IKeychainService.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/utility/IKeychainService.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QHash>
 #include <QSet>

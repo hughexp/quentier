@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
 
 #include <QApplication>
 

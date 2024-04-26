@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_UTILITY_KEYCHAIN_H
 #define QUENTIER_LIB_UTILITY_KEYCHAIN_H
 
-#include <quentier/utility/IKeychainService.h>
+#include <lib/libquentier/headers/quentier/utility/IKeychainService.h>
 
 QT_FORWARD_DECLARE_CLASS(QDebug);
 

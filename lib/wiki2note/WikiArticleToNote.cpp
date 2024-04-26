@@ -18,9 +18,9 @@
 
 #include "WikiArticleToNote.h"
 
-#include <quentier/enml/DecryptedTextManager.h>
-#include <quentier/enml/ENMLConverter.h>
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/enml/DecryptedTextManager.h>
+#include <lib/libquentier/headers/quentier/enml/ENMLConverter.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QBuffer>
 #include <QCryptographicHash>

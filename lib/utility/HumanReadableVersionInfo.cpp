@@ -20,7 +20,7 @@
 
 #include <VersionInfo.h>
 
-#include <quentier/utility/VersionInfo.h>
+#include <lib/libquentier/headers/quentier/utility/VersionInfo.h>
 
 #include <qt5qevercloud/VersionInfo.h>
 

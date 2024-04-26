@@ -19,7 +19,7 @@
 #ifndef QUENTIER_PREFERENCES_PANEL_COLORS_HANDLER_WIDGET_H
 #define QUENTIER_PREFERENCES_PANEL_COLORS_HANDLER_WIDGET_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QColor>
 #include <QLinearGradient>

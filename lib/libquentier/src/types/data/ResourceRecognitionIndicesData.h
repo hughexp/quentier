@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_TYPES_DATA_RESOURCE_RECOGNITION_INDICES_DATA_H
 #define LIB_QUENTIER_TYPES_DATA_RESOURCE_RECOGNITION_INDICES_DATA_H
 
-#include <quentier/types/ResourceRecognitionIndexItem.h>
+#include <lib/libquentier/headers/quentier/types/ResourceRecognitionIndexItem.h>
 
 #include "ResourceRecognitionIndexItemData.h"
 

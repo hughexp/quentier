@@ -19,9 +19,9 @@
 #ifndef LIB_QUENTIER_NOTE_EDITOR_NOTE_EDITOR_LOCAL_STORAGE_BROKER_H
 #define LIB_QUENTIER_NOTE_EDITOR_NOTE_EDITOR_LOCAL_STORAGE_BROKER_H
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/types/Note.h>
-#include <quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
 
 #include <QHash>
 #include <QObject>

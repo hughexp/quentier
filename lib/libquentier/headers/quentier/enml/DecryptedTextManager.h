@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_ENML_DECRYPTED_TEXT_MANAGER_H
 #define LIB_QUENTIER_ENML_DECRYPTED_TEXT_MANAGER_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QtGlobal>
 

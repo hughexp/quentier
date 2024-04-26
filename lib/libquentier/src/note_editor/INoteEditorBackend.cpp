@@ -16,9 +16,9 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/note_editor/INoteEditorBackend.h>
-#include <quentier/note_editor/NoteEditor.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/note_editor/INoteEditorBackend.h>
+#include <lib/libquentier/headers/quentier/note_editor/NoteEditor.h>
 
 #include <QUndoStack>
 

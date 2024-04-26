@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_TYPES_REGISTER_METATYPES_H
 #define LIB_QUENTIER_TYPES_REGISTER_METATYPES_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 namespace quentier {
 

@@ -25,10 +25,10 @@
 #include "AddAccountDialog.h"
 #include "DeleteAccountDialog.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QAbstractTableModel>
 #include <QItemSelection>

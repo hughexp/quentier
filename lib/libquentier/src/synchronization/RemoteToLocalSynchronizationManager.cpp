@@ -23,16 +23,16 @@
 #include "NoteThumbnailDownloader.h"
 #include "qglobal.h"
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/QuentierCheckPtr.h>
-#include <quentier/utility/StandardPaths.h>
-#include <quentier/utility/SysInfo.h>
-#include <quentier/utility/TagSortByParentChildRelations.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierCheckPtr.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/utility/TagSortByParentChildRelations.h>
 
 #include <QCoreApplication>
 #include <QDir>

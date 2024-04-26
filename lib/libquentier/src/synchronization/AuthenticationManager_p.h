@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_AUTHENTICATION_MANAGER_PRIVATE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_AUTHENTICATION_MANAGER_PRIVATE_H
 
-#include <quentier/synchronization/AuthenticationManager.h>
+#include <lib/libquentier/headers/quentier/synchronization/AuthenticationManager.h>
 
 namespace quentier {
 

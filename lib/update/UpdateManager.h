@@ -23,7 +23,7 @@
 
 #include <lib/preferences/UpdateSettings.h>
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QJsonObject>
 #include <QObject>

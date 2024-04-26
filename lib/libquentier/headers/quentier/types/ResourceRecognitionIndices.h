@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_TYPES_RESOURCE_RECOGNITION_INDICES_H
 #define LIB_QUENTIER_TYPES_RESOURCE_RECOGNITION_INDICES_H
 
-#include <quentier/types/ResourceRecognitionIndexItem.h>
+#include <lib/libquentier/headers/quentier/types/ResourceRecognitionIndexItem.h>
 
 #include <QByteArray>
 #include <QSharedDataPointer>

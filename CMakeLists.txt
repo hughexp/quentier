@@ -4,6 +4,8 @@ project(quentier)
 
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/sanitizers ${CMAKE_MODULE_PATH})
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_CXX_FLAGS "-03")
 
 include(QuentierCMakePolicies)
 SET_POLICIES()
@@ -14,7 +16,7 @@ include(QuentierLinkerSettings)
 include(QuentierSetupQt)
 # include(QuentierUpdateTranslations)
 include(QuentierFindQEverCloud)
-include(QuentierFindLibquentier)
+#include(QuentierFindLibquentier)
 include(QuentierFindBoost)
 include(QuentierDoxygen)
 
@@ -299,7 +301,7 @@ set(QUENTIER_TR_FILES
 set(QUENTIER_QM_FILES "")
 get_property(QUENTIER_TRANSLATABLE_SOURCES GLOBAL PROPERTY QUENTIER_TRANSLATABLE_SOURCES)
 get_property(QUENTIER_TRANSLATABLE_FORMS GLOBAL PROPERTY QUENTIER_TRANSLATABLE_FORMS)
-# update_translation("${QUENTIER_TRANSLATABLE_SOURCES}" "${QUENTIER_TRANSLATABLE_FORMS}" "${QUENTIER_TR_FILES}")
+#update_translation("${QUENTIER_TRANSLATABLE_SOURCES}" "${QUENTIER_TRANSLATABLE_FORMS}" "${QUENTIER_TR_FILES}")
 
 # install translations
 foreach(QM_FILE ${QUENTIER_QM_FILES})

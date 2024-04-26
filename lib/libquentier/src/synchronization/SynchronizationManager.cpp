@@ -16,11 +16,11 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/synchronization/SynchronizationManager.h>
+#include <lib/libquentier/headers/quentier/synchronization/SynchronizationManager.h>
 
 #include "SynchronizationManager_p.h"
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
 
 namespace quentier {
 

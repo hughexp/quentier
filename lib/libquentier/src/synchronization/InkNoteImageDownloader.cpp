@@ -18,7 +18,7 @@
 
 #include "InkNoteImageDownloader.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <qt5qevercloud/InkNoteImageDownloader.h>
 

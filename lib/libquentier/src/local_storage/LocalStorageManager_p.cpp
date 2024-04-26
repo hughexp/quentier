@@ -22,20 +22,20 @@
 #include "LocalStorageShared.h"
 #include "Transaction.h"
 
-#include <quentier/exception/DatabaseLockFailedException.h>
-#include <quentier/exception/DatabaseLockedException.h>
-#include <quentier/exception/DatabaseOpeningException.h>
-#include <quentier/exception/DatabaseRequestException.h>
-#include <quentier/local_storage/NoteSearchQuery.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ResourceRecognitionIndices.h>
-#include <quentier/utility/Checks.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/FileSystem.h>
-#include <quentier/utility/StandardPaths.h>
-#include <quentier/utility/StringUtils.h>
-#include <quentier/utility/SysInfo.h>
-#include <quentier/utility/UidGenerator.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseLockFailedException.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseLockedException.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseOpeningException.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseRequestException.h>
+#include <lib/libquentier/headers/quentier/local_storage/NoteSearchQuery.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ResourceRecognitionIndices.h>
+#include <lib/libquentier/headers/quentier/utility/Checks.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystem.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/utility/UidGenerator.h>
 
 #include <QBuffer>
 #include <QDir>

@@ -98,21 +98,21 @@ using quentier::LogViewerWidget;
 #include <lib/widget/SavedSearchModelItemInfoWidget.h>
 #include <lib/widget/TagModelItemInfoWidget.h>
 
-#include <quentier/note_editor/NoteEditor.h>
+#include <lib/libquentier/headers/quentier/note_editor/NoteEditor.h>
 
 #include "ui_MainWindow.h"
 
-#include <quentier/local_storage/NoteSearchQuery.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/QuentierCheckPtr.h>
-#include <quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/local_storage/NoteSearchQuery.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierCheckPtr.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

@@ -19,7 +19,7 @@
 #include "ListItemWidget.h"
 #include "ui_ListItemWidget.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 namespace quentier {
 

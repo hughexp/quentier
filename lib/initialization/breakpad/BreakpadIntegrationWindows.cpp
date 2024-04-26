@@ -18,7 +18,7 @@
 
 #include "BreakpadIntegration.h"
 
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 SAVE_WARNINGS
 

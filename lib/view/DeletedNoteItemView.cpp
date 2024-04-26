@@ -20,8 +20,8 @@
 
 #include <lib/model/note/NoteModel.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
 
 #include <QContextMenuEvent>
 #include <QMenu>

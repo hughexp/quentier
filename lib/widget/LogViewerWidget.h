@@ -21,9 +21,9 @@
 
 #include <lib/model/log_viewer/LogViewerModel.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/FileSystemWatcher.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystemWatcher.h>
 
 #include <QBasicTimer>
 #include <QModelIndex>

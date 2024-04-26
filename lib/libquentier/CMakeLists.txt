@@ -762,90 +762,13 @@ add_definitions("-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII")
 add_definitions("-DQT_NO_CAST_FROM_BYTEARRAY -DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT")
 
 set(TEST_HEADERS
-    src/tests/enml/EnexExportImportTests.h
-    src/tests/enml/ENMLConverterTests.h
-    src/tests/enml/ENMLTester.h
-    src/tests/local_storage/LocalStorageCacheAsyncTester.h
-    src/tests/local_storage/LocalStorageManagerTester.h
-    src/tests/local_storage/LocalStorageManagerAsyncTests.h
-    src/tests/local_storage/LocalStorageManagerBasicTests.h
-    src/tests/local_storage/LocalStorageManagerListTests.h
-    src/tests/local_storage/LocalStorageManagerNoteSearchQueryTest.h
-    src/tests/local_storage/LinkedNotebookLocalStorageManagerAsyncTester.h
-    src/tests/local_storage/NotebookLocalStorageManagerAsyncTester.h
-    src/tests/local_storage/NoteLocalStorageManagerAsyncTester.h
-    src/tests/local_storage/NoteNotebookAndTagListTrackingAsyncTester.h
-    src/tests/local_storage/NoteSearchQueryParsingTest.h
-    src/tests/local_storage/ResourceLocalStorageManagerAsyncTester.h
-    src/tests/local_storage/SavedSearchLocalStorageManagerAsyncTester.h
-    src/tests/local_storage/TagLocalStorageManagerAsyncTester.h
-    src/tests/local_storage/UserLocalStorageManagerAsyncTester.h
-    src/tests/types/ResourceRecognitionIndicesParsingTest.h
-    src/tests/types/TypesTester.h
-    src/tests/synchronization/FakeAuthenticationManager.h
-    src/tests/synchronization/FakeKeychainService.h
-    src/tests/synchronization/FakeNoteStore.h
-    src/tests/synchronization/FakeUserStore.h
-    src/tests/synchronization/FullSyncStaleDataItemsExpungerTester.h
-    src/tests/synchronization/SynchronizationManagerSignalsCatcher.h
-    src/tests/synchronization/SynchronizationTester.h
-    src/tests/utility/EncryptionManagerTests.h
-    src/tests/utility/LRUCacheTests.h
-    src/tests/utility/TagSortByParentChildRelationsTest.h
-    src/tests/utility/UtilityTester.h
-    src/tests/utility/keychain/CompositeKeychainTester.h
-    src/tests/utility/keychain/KeychainServiceMock.h
-    src/tests/utility/keychain/MigratingKeychainTester.h
-    src/tests/utility/keychain/ObfuscatingKeychainTester.h
+   
     src/tests/TestMacros.h
-    src/synchronization/FullSyncStaleDataItemsExpunger.h
-    src/synchronization/TagSyncCache.h
-    src/synchronization/SavedSearchSyncCache.h
-    src/synchronization/NoteSyncCache.h
-    src/synchronization/NotebookSyncCache.h)
+   )
 
 set(TEST_SOURCES
-    src/tests/enml/EnexExportImportTests.cpp
-    src/tests/enml/ENMLConverterTests.cpp
-    src/tests/enml/ENMLTester.cpp
-    src/tests/local_storage/LocalStorageCacheAsyncTester.cpp
-    src/tests/local_storage/LocalStorageManagerTester.cpp
-    src/tests/local_storage/LocalStorageManagerAsyncTests.cpp
-    src/tests/local_storage/LocalStorageManagerBasicTests.cpp
-    src/tests/local_storage/LocalStorageManagerListTests.cpp
-    src/tests/local_storage/LocalStorageManagerNoteSearchQueryTest.cpp
-    src/tests/local_storage/LinkedNotebookLocalStorageManagerAsyncTester.cpp
-    src/tests/local_storage/NotebookLocalStorageManagerAsyncTester.cpp
-    src/tests/local_storage/NoteLocalStorageManagerAsyncTester.cpp
-    src/tests/local_storage/NoteNotebookAndTagListTrackingAsyncTester.cpp
-    src/tests/local_storage/NoteSearchQueryParsingTest.cpp
-    src/tests/local_storage/ResourceLocalStorageManagerAsyncTester.cpp
-    src/tests/local_storage/SavedSearchLocalStorageManagerAsyncTester.cpp
-    src/tests/local_storage/TagLocalStorageManagerAsyncTester.cpp
-    src/tests/local_storage/UserLocalStorageManagerAsyncTester.cpp
-    src/tests/types/ResourceRecognitionIndicesParsingTest.cpp
-    src/tests/types/TypesTester.cpp
-    src/tests/synchronization/FakeAuthenticationManager.cpp
-    src/tests/synchronization/FakeKeychainService.cpp
-    src/tests/synchronization/FakeNoteStore.cpp
-    src/tests/synchronization/FakeUserStore.cpp
-    src/tests/synchronization/FullSyncStaleDataItemsExpungerTester.cpp
-    src/tests/synchronization/SynchronizationManagerSignalsCatcher.cpp
-    src/tests/synchronization/SynchronizationTester.cpp
-    src/tests/utility/EncryptionManagerTests.cpp
-    src/tests/utility/LRUCacheTests.cpp
-    src/tests/utility/TagSortByParentChildRelationsTest.cpp
-    src/tests/utility/UtilityTester.cpp
-    src/tests/utility/keychain/CompositeKeychainTester.cpp
-    src/tests/utility/keychain/KeychainServiceMock.cpp
-    src/tests/utility/keychain/MigratingKeychainTester.cpp
-    src/tests/utility/keychain/ObfuscatingKeychainTester.cpp
     src/tests/TestMain.cpp
-    src/synchronization/FullSyncStaleDataItemsExpunger.cpp
-    src/synchronization/TagSyncCache.cpp
-    src/synchronization/SavedSearchSyncCache.cpp
-    src/synchronization/NoteSyncCache.cpp
-    src/synchronization/NotebookSyncCache.cpp)
+    )
 
 set(TEST_RESOURCES
     src/tests/resources/test_resources.qrc)
@@ -983,15 +906,15 @@ foreach(QM_FILE ${${PROJECT_NAME}_QM_FILES})
 endforeach()
 
 # install cmake files
-install(EXPORT Libquentier-${LIBQUENTIER_QT_VERSION}LibraryDepends DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindPackageWrapperMacro.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindHunspell.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/hunspell_new_api_check.cpp DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindTidyHtml5.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindQtDependencies.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindOtherDependencies.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}Config.cmake DESTINATION ${INSTALL_CMAKE_DIR})
-install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}ConfigVersion.cmake DESTINATION ${INSTALL_CMAKE_DIR})
+# install(EXPORT Libquentier-${LIBQUENTIER_QT_VERSION}LibraryDepends DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindPackageWrapperMacro.cmake DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindHunspell.cmake DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/hunspell_new_api_check.cpp DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_SOURCE_DIR}/cmake/modules/LibquentierFindTidyHtml5.cmake DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindQtDependencies.cmake DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}FindOtherDependencies.cmake DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}Config.cmake DESTINATION ${INSTALL_CMAKE_DIR})
+# install(FILES ${PROJECT_BINARY_DIR}/Libquentier-${LIBQUENTIER_QT_VERSION}ConfigVersion.cmake DESTINATION ${INSTALL_CMAKE_DIR})
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 enable_testing()

@@ -19,9 +19,9 @@
 #ifndef QUENTIER_LIB_ACCOUNT_ACCOUNT_MODEL_H
 #define QUENTIER_LIB_ACCOUNT_ACCOUNT_MODEL_H
 
-#include <quentier/types/Account.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QAbstractTableModel>
 #include <QPointer>

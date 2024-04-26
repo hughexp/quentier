@@ -38,12 +38,12 @@
 #include <lib/widget/NoteEditorWidget.h>
 #include <lib/widget/panel/SidePanelStyleController.h>
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/synchronization/AuthenticationManager.h>
-#include <quentier/synchronization/SynchronizationManager.h>
-#include <quentier/utility/ShortcutManager.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/synchronization/AuthenticationManager.h>
+#include <lib/libquentier/headers/quentier/synchronization/SynchronizationManager.h>
+#include <lib/libquentier/headers/quentier/utility/ShortcutManager.h>
 
-#include <quentier/utility/VersionInfo.h>
+#include <lib/libquentier/headers/quentier/utility/VersionInfo.h>
 #if !LIB_QUENTIER_HAS_AUTHENTICATION_MANAGER
 #error "Quentier needs libquentier built with authentication manager"
 #endif

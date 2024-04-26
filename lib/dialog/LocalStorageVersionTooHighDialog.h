@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_DIALOG_LOCAL_STORAGE_VERSION_TOO_HIGH_DIALOG_H
 #define QUENTIER_LIB_DIALOG_LOCAL_STORAGE_VERSION_TOO_HIGH_DIALOG_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QDialog>
 

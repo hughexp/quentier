@@ -21,8 +21,8 @@
 
 #include "ILocalStorageDataElement.h"
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QUuid>
 #include <QtGlobal>

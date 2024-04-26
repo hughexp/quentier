@@ -19,10 +19,10 @@
 #ifndef LIB_QUENTIER_ENML_ENML_CONVERTER_H
 #define LIB_QUENTIER_ENML_ENML_CONVERTER_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
-#include <quentier/utility/Linkage.h>
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QHash>
 #include <QSet>

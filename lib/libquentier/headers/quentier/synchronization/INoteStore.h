@@ -19,13 +19,13 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_I_NOTE_STORE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_I_NOTE_STORE_H
 
-#include <quentier/synchronization/ForwardDeclarations.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/SavedSearch.h>
-#include <quentier/types/Tag.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/synchronization/ForwardDeclarations.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

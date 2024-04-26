@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_ENCRYPTION_MANAGER_P_H
 #define LIB_QUENTIER_UTILITY_ENCRYPTION_MANAGER_P_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QVector>
 

@@ -20,11 +20,11 @@
 
 #include "IUpdateChecker.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/System.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/System.h>
 
 #include <QApplication>
 #include <QDateTime>

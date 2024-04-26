@@ -19,9 +19,9 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_NOTE_STORE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_NOTE_STORE_H
 
-#include <quentier/synchronization/INoteStore.h>
+#include <lib/libquentier/headers/quentier/synchronization/INoteStore.h>
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

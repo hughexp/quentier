@@ -16,14 +16,14 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/IKeychainService.h>
+#include <lib/libquentier/headers/quentier/utility/IKeychainService.h>
 
 #include "CompositeKeychainService.h"
 #include "MigratingKeychainService.h"
 #include "ObfuscatingKeychainService.h"
 #include "QtKeychainService.h"
 
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QDebug>
 #include <QTextStream>

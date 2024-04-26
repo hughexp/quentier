@@ -16,8 +16,8 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 #include "data/ErrorStringData.h"
 

@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_STRING_UTILS_PRIVATE_H
 #define LIB_QUENTIER_UTILITY_STRING_UTILS_PRIVATE_H
 
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QHash>
 #include <QStringList>

@@ -1,0 +1,9 @@
+{
+    "cmake.sourceDirectory": "/Users/hugh/develop/notes/note_combine",
+    "files.associations": {
+        "Makefile": "cmake",
+        "qtwidgets": "qt",
+        "qapplication": "qt",
+        "iostream": "cpp"  
+    }
+}

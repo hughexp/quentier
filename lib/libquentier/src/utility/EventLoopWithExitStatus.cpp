@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/EventLoopWithExitStatus.h>
+#include <lib/libquentier/headers/quentier/utility/EventLoopWithExitStatus.h>
 
 #include <QDebug>
 #include <QTextStream>

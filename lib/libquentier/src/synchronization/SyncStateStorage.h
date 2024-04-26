@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_SYNC_STATE_STORAGE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_SYNC_STATE_STORAGE_H
 
-#include <quentier/synchronization/ISyncStateStorage.h>
+#include <lib/libquentier/headers/quentier/synchronization/ISyncStateStorage.h>
 
 namespace quentier {
 

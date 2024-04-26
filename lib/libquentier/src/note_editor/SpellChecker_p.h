@@ -21,8 +21,8 @@
 
 #include "SpellCheckerDictionariesFinder.h"
 
-#include <quentier/types/Account.h>
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QAtomicInt>
 #include <QHash>

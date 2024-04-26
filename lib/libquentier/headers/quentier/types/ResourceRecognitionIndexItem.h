@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_TYPES_RESOURCE_RECOGNITION_INDEX_ITEM_H
 #define LIB_QUENTIER_TYPES_RESOURCE_RECOGNITION_INDEX_ITEM_H
 
-#include <quentier/utility/Linkage.h>
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <QByteArray>
 #include <QSharedDataPointer>

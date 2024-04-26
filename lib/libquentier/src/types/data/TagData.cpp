@@ -18,8 +18,8 @@
 
 #include "TagData.h"
 
-#include <quentier/types/Tag.h>
-#include <quentier/utility/Checks.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/utility/Checks.h>
 
 namespace quentier {
 

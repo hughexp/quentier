@@ -17,7 +17,7 @@
  */
 
 #include "AuthenticationManager_p.h"
-#include <quentier/synchronization/AuthenticationManager.h>
+#include <lib/libquentier/headers/quentier/synchronization/AuthenticationManager.h>
 
 namespace quentier {
 

@@ -25,9 +25,9 @@
 #include <lib/model/notebook/NotebookCache.h>
 #include <lib/utility/IStartable.h>
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/types/Account.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QAbstractItemModel>
 

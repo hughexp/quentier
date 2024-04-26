@@ -18,7 +18,7 @@
 
 #include "FileCopier_p.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QByteArray>
 #include <QCoreApplication>

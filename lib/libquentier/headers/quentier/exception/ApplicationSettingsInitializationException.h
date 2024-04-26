@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_EXCEPTION_APPLICATION_SETTINGS_INITIALIZATION_EXCEPTION_H
 #define LIB_QUENTIER_EXCEPTION_APPLICATION_SETTINGS_INITIALIZATION_EXCEPTION_H
 
-#include <quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
 
 namespace quentier {
 

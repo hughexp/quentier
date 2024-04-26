@@ -19,7 +19,7 @@
 #include "TableSettingsDialog.h"
 #include "ui_TableSettingsDialog.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 namespace quentier {
 

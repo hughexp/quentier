@@ -19,10 +19,10 @@
 #include "AddAccountDialog.h"
 #include "ui_AddAccountDialog.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/StandardPaths.h>
-#include <quentier/utility/System.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/System.h>
 
 #include <QPushButton>
 #include <QStringListModel>

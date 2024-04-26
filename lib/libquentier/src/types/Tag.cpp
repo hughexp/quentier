@@ -18,7 +18,7 @@
 
 #include "data/TagData.h"
 
-#include <quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
 
 namespace quentier {
 

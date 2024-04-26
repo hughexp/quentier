@@ -22,9 +22,9 @@
 #include <lib/account/AccountFilterModel.h>
 #include <lib/account/AccountModel.h>
 
-#include <quentier/local_storage/LocalStorageManager.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManager.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QItemSelection>
 

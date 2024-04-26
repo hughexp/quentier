@@ -84,6 +84,7 @@ set(FORMS
 qt_wrap_ui(FORMS_HEADERS ${FORMS})
 
 add_library(${PROJECT_NAME} STATIC ${HEADERS} ${FORMS_HEADERS} ${SOURCES})
+target_link_libraries(${PROJECT_NAME} libqt5quentier)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
   CXX_STANDARD 14

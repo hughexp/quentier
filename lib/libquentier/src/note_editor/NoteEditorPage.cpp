@@ -21,8 +21,8 @@
 #include "JavaScriptInOrderExecutor.h"
 #include "NoteEditor_p.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/QuentierCheckPtr.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierCheckPtr.h>
 
 #include <QAction>
 #include <QApplication>

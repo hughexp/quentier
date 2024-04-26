@@ -18,11 +18,11 @@
 
 #include "data/NoteData.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
 
 #include <algorithm>
 

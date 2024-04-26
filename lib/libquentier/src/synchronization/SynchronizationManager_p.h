@@ -22,10 +22,10 @@
 #include "RemoteToLocalSynchronizationManager.h"
 #include "SendLocalChangesManager.h"
 
-#include <quentier/synchronization/ForwardDeclarations.h>
-#include <quentier/types/Account.h>
-#include <quentier/utility/IKeychainService.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/synchronization/ForwardDeclarations.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/IKeychainService.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 SAVE_WARNINGS
 

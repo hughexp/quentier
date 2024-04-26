@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_DATE_TIME_H
 #define LIB_QUENTIER_UTILITY_DATE_TIME_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QFlags>
 

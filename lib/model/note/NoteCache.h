@@ -19,8 +19,8 @@
 #ifndef QUENTIER_LIB_MODEL_NOTE_CACHE_H
 #define QUENTIER_LIB_MODEL_NOTE_CACHE_H
 
-#include <quentier/types/Note.h>
-#include <quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
 
 namespace quentier {
 

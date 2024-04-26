@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_LOCAL_STORAGE_DEFAULT_LOCAL_STORAGE_CACHE_EXPIRY_CHECKER_H
 #define LIB_QUENTIER_LOCAL_STORAGE_DEFAULT_LOCAL_STORAGE_CACHE_EXPIRY_CHECKER_H
 
-#include <quentier/local_storage/ILocalStorageCacheExpiryChecker.h>
+#include <lib/libquentier/headers/quentier/local_storage/ILocalStorageCacheExpiryChecker.h>
 
 namespace quentier {
 

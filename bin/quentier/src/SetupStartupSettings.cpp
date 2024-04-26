@@ -23,7 +23,7 @@
 #include <lib/preferences/keys/Appearance.h>
 #include <lib/preferences/keys/Files.h>
 
-#include <quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
 
 #include <QCoreApplication>
 

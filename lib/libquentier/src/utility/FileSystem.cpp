@@ -16,11 +16,11 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/FileSystem.h>
-#include <quentier/utility/Size.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystem.h>
+#include <lib/libquentier/headers/quentier/utility/Size.h>
 
 #include <QDir>
 #include <QFile>

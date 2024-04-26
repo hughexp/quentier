@@ -16,8 +16,8 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/types/ResourceRecognitionIndices.h>
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/types/ResourceRecognitionIndices.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 #include "data/ResourceRecognitionIndicesData.h"
 

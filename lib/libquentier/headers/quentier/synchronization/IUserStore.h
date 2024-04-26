@@ -19,9 +19,9 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_I_USER_STORE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_I_USER_STORE_H
 
-#include <quentier/synchronization/ForwardDeclarations.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/synchronization/ForwardDeclarations.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QList>
 #include <QNetworkCookie>

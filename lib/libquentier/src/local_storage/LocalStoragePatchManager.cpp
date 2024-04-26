@@ -20,8 +20,8 @@
 #include "LocalStorageManager_p.h"
 #include "patches/LocalStoragePatch1To2.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <iterator>
 

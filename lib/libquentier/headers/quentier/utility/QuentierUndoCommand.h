@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_QUENTIER_UNDO_COMMAND_H
 #define LIB_QUENTIER_UTILITY_QUENTIER_UNDO_COMMAND_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QObject>
 #include <QUndoCommand>

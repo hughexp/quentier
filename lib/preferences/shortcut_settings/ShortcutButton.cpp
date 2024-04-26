@@ -25,7 +25,7 @@
 
 #include "ShortcutButton.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QApplication>
 #include <QEvent>

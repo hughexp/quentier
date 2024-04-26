@@ -19,11 +19,11 @@
 #ifndef LIB_QUENTIER_LOCAL_STORAGE_LOCAL_STORAGE_MANAGER_H
 #define LIB_QUENTIER_LOCAL_STORAGE_LOCAL_STORAGE_MANAGER_H
 
-#include <quentier/local_storage/Lists.h>
-#include <quentier/local_storage/NoteSearchQuery.h>
-#include <quentier/types/Account.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/local_storage/Lists.h>
+#include <lib/libquentier/headers/quentier/local_storage/NoteSearchQuery.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QHash>
 #include <QString>

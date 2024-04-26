@@ -18,9 +18,9 @@
 
 #include "GenericResourceImageManager.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/FileSystem.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystem.h>
 
 #include <QDateTime>
 #include <QDir>

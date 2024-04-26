@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_TAG_SORT_BY_PARENT_CHILD_RELATIONS_HELPERS_HPP
 #define LIB_QUENTIER_UTILITY_TAG_SORT_BY_PARENT_CHILD_RELATIONS_HELPERS_HPP
 
-#include <quentier/utility/TagSortByParentChildRelations.h>
+#include <lib/libquentier/headers/quentier/utility/TagSortByParentChildRelations.h>
 
 namespace quentier {
 

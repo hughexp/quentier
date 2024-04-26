@@ -22,10 +22,10 @@
 #include <lib/widget/NoteEditorTabsAndWindowsCoordinator.h>
 #include <lib/widget/NoteEditorWidget.h>
 
-#include <quentier/enml/ENMLConverter.h>
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/enml/ENMLConverter.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 #include <QVector>
 

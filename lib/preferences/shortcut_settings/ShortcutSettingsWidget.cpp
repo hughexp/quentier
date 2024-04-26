@@ -31,10 +31,10 @@ using quentier::ShortcutButton;
 
 #include <lib/utility/ActionsInfo.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/ShortcutManager.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/ShortcutManager.h>
 
 #include <QtAlgorithms>
 

@@ -20,7 +20,7 @@
 
 #include <lib/model/notebook/NotebookModel.h>
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QFontMetrics>
 #include <QPainter>

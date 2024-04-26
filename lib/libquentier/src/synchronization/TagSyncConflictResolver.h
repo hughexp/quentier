@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_TAG_SYNC_CONFLICT_RESOLVER_H
 #define LIB_QUENTIER_SYNCHRONIZATION_TAG_SYNC_CONFLICT_RESOLVER_H
 
-#include <quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

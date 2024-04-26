@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_MODEL_FAVORITES_MODEL_ITEM_H
 #define QUENTIER_LIB_MODEL_FAVORITES_MODEL_ITEM_H
 
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 namespace quentier {
 

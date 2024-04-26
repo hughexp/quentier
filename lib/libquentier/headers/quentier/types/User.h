@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_TYPES_USER_H
 #define LIB_QUENTIER_TYPES_USER_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

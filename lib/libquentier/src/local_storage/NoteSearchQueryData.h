@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_LOCAL_STORAGE_NOTE_SEARCH_QUERY_DATA_H
 #define LIB_QUENTIER_LOCAL_STORAGE_NOTE_SEARCH_QUERY_DATA_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QSharedData>
 #include <QStringList>

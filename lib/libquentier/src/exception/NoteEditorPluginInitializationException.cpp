@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/exception/NoteEditorPluginInitializationException.h>
+#include <lib/libquentier/headers/quentier/exception/NoteEditorPluginInitializationException.h>
 
 namespace quentier {
 

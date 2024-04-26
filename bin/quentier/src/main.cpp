@@ -27,12 +27,12 @@
 #include <lib/utility/ExitCodes.h>
 #include <lib/utility/RestartApp.h>
 
-#include <quentier/exception/DatabaseLockedException.h>
-#include <quentier/exception/DatabaseOpeningException.h>
-#include <quentier/exception/IQuentierException.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/QuentierApplication.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseLockedException.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseOpeningException.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierApplication.h>
 
 #if QT_VERSION < QT_VERSION_CHECK(5, 14, 0)
 #include <QSessionManager>
@@ -90,6 +90,7 @@ int main(int argc, char * argv[])
         std::cerr << parseCmdResult.m_errorDescription.nonLocalizedString()
                          .toLocal8Bit()
                          .constData();
+                         
         return 1;
     }
 

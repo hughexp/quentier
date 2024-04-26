@@ -18,7 +18,7 @@
 
 #include "AccountModel.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QTextStream>
 

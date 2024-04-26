@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_MODEL_TESTS_NOTEBOOK_MODEL_TEST_HELPER_H
 #define QUENTIER_LIB_MODEL_TESTS_NOTEBOOK_MODEL_TEST_HELPER_H
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
 
 namespace quentier {
 

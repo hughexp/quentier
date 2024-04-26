@@ -16,8 +16,8 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/local_storage/ILocalStorageCacheExpiryChecker.h>
-#include <quentier/local_storage/LocalStorageCacheManager.h>
+#include <lib/libquentier/headers/quentier/local_storage/ILocalStorageCacheExpiryChecker.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageCacheManager.h>
 
 namespace quentier {
 

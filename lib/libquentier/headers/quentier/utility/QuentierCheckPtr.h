@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_UTILITY_QUENTIER_CHECK_PTR_H
 #define LIB_QUENTIER_UTILITY_QUENTIER_CHECK_PTR_H
 
-#include <quentier/exception/NullPtrException.h>
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/exception/NullPtrException.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #ifndef QUENTIER_CHECK_PTR
 #define QUENTIER_CHECK_PTR(component, pointer, ...)                            \

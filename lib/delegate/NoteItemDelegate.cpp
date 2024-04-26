@@ -23,7 +23,7 @@
 #include <lib/preferences/defaults/Appearance.h>
 #include <lib/view/NoteListView.h>
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QDateTime>
 #include <QListView>

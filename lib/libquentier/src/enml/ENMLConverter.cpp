@@ -16,11 +16,11 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/enml/ENMLConverter.h>
+#include <lib/libquentier/headers/quentier/enml/ENMLConverter.h>
 
 #include "ENMLConverter_p.h"
 
-#include <quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
 
 namespace quentier {
 

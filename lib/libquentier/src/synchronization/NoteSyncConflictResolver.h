@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_NOTE_SYNC_CONFLICT_RESOLVER_H
 #define LIB_QUENTIER_SYNCHRONIZATION_NOTE_SYNC_CONFLICT_RESOLVER_H
 
-#include <quentier/local_storage/LocalStorageManager.h>
-#include <quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManager.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

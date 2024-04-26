@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_SAVED_SEARCH_SYNC_CONFLICT_RESOLVER_H
 #define LIB_QUENTIER_SYNCHRONIZATION_SAVED_SEARCH_SYNC_CONFLICT_RESOLVER_H
 
-#include <quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

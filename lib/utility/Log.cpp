@@ -20,7 +20,7 @@
 
 #include <lib/preferences/keys/Logging.h>
 
-#include <quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
 
 namespace quentier {
 

@@ -19,7 +19,7 @@
 #include <cstring>
 #include <ostream>
 
-#include <quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
 
 namespace quentier {
 

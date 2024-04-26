@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_INITIALIZATION_PARSE_STARTUP_ACCOUNT_H
 #define QUENTIER_LIB_INITIALIZATION_PARSE_STARTUP_ACCOUNT_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

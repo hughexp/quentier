@@ -23,11 +23,11 @@
 #include <lib/model/notebook/NotebookCache.h>
 #include <lib/model/tag/TagCache.h>
 
-#include <quentier/local_storage/LocalStorageManager.h>
-#include <quentier/types/Account.h>
-#include <quentier/types/Note.h>
-#include <quentier/utility/LRUCache.hpp>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManager.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QHash>
 #include <QMap>

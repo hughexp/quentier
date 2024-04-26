@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_INITIALIZATION_SETUP_TRANSLATIONS_H
 #define QUENTIER_LIB_INITIALIZATION_SETUP_TRANSLATIONS_H
 
-#include <quentier/utility/QuentierApplication.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierApplication.h>
 
 namespace quentier {
 

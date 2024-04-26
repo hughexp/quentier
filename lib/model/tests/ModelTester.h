@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_MODEL_TESTS_MODEL_TESTER_H
 #define QUENTIER_LIB_MODEL_TESTS_MODEL_TESTER_H
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
 
 #include <QObject>
 

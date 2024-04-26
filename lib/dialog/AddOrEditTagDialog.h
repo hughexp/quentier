@@ -21,7 +21,7 @@
 
 #include <lib/model/tag/TagModel.h>
 
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QDialog>
 #include <QPointer>

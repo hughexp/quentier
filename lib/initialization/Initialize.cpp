@@ -28,13 +28,13 @@
 #include <lib/utility/HumanReadableVersionInfo.h>
 #include <lib/utility/Log.h>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Initialize.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/QuentierApplication.h>
-#include <quentier/utility/StandardPaths.h>
-#include <quentier/utility/VersionInfo.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Initialize.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierApplication.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/VersionInfo.h>
 
 #include <QFileInfo>
 #include <QtGlobal>

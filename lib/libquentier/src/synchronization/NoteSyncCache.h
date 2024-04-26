@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_SYNCHRONIZATION_NOTE_SYNC_CACHE_H
 #define LIB_QUENTIER_SYNCHRONIZATION_NOTE_SYNC_CACHE_H
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QHash>
 #include <QObject>

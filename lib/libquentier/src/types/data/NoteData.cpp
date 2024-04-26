@@ -18,11 +18,11 @@
 
 #include "NoteData.h"
 
-#include <quentier/enml/ENMLConverter.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Note.h>
-#include <quentier/utility/Checks.h>
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/enml/ENMLConverter.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/utility/Checks.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 #include <QXmlStreamReader>
 

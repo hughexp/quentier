@@ -19,10 +19,10 @@
 #ifndef LIB_QUENTIER_NOTE_EDITOR_NOTE_EDITOR_H
 #define LIB_QUENTIER_NOTE_EDITOR_NOTE_EDITOR_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QPrinter>
 #include <QStringList>

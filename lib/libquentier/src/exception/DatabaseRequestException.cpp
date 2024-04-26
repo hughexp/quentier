@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/exception/DatabaseRequestException.h>
+#include <lib/libquentier/headers/quentier/exception/DatabaseRequestException.h>
 
 namespace quentier {
 

@@ -22,11 +22,11 @@
 #include <lib/delegate/LogViewerDelegate.h>
 #include <lib/preferences/keys/Logging.h>
 
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/StandardPaths.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QApplication>
 #include <QCheckBox>

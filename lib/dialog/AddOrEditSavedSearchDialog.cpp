@@ -20,8 +20,8 @@
 #include "ui_AddOrEditSavedSearchDialog.h"
 
 #include <lib/model/saved_search/SavedSearchModel.h>
-#include <quentier/local_storage/NoteSearchQuery.h>
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/local_storage/NoteSearchQuery.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QPushButton>
 

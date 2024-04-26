@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_SIZE_H
 #define LIB_QUENTIER_UTILITY_SIZE_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QString>
 

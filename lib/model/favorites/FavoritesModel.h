@@ -27,14 +27,14 @@
 #include <lib/model/saved_search/SavedSearchCache.h>
 #include <lib/model/tag/TagCache.h>
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/types/Account.h>
-#include <quentier/types/Note.h>
-#include <quentier/types/Notebook.h>
-#include <quentier/types/SavedSearch.h>
-#include <quentier/types/Tag.h>
-#include <quentier/utility/LRUCache.hpp>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Notebook.h>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QAbstractItemModel>
 #include <QHash>

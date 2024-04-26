@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_UTILITY_INITIALIZE_H
 #define LIB_QUENTIER_UTILITY_INITIALIZE_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 namespace quentier {
 

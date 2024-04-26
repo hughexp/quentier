@@ -19,8 +19,8 @@
 #ifndef QUENTIER_LIB_MODEL_SAVED_SEARCH_CACHE_H
 #define QUENTIER_LIB_MODEL_SAVED_SEARCH_CACHE_H
 
-#include <quentier/types/SavedSearch.h>
-#include <quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/types/SavedSearch.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
 
 namespace quentier {
 

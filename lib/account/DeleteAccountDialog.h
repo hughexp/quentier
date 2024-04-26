@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_ACCOUNT_DELETE_ACOUNT_DIALOG_H
 #define QUENTIER_LIB_ACCOUNT_DELETE_ACOUNT_DIALOG_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QDialog>
 #include <QPointer>

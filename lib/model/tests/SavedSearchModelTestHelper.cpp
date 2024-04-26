@@ -23,9 +23,9 @@
 
 #include <lib/model/saved_search/SavedSearchModel.h>
 
-#include <quentier/exception/IQuentierException.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/SysInfo.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/SysInfo.h>
 
 namespace quentier {
 

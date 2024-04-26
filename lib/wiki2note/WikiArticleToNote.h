@@ -21,8 +21,8 @@
 
 #include <lib/network/NetworkReplyFetcher.h>
 
-#include <quentier/types/Note.h>
-#include <quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/types/Note.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
 
 #include <QHash>
 #include <QObject>

@@ -18,7 +18,7 @@
 
 #include "EncryptionManager_p.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <openssl/conf.h>
 #include <openssl/err.h>

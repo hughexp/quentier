@@ -22,7 +22,7 @@
 #include "NoteEditorPluginFactory.h"
 #include "NoteEditor_p.h"
 
-#include <quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
 
 #include <QAction>
 

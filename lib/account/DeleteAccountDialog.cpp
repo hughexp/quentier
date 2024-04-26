@@ -21,10 +21,10 @@
 #include "AccountModel.h"
 #include "ui_DeleteAccountDialog.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/FileSystem.h>
-#include <quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystem.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
 
 #include <QDir>
 #include <QFileInfo>

@@ -19,12 +19,12 @@
 #ifndef QUENTIER_LIB_MODEL_LOG_VIEWER_MODEL_H
 #define QUENTIER_LIB_MODEL_LOG_VIEWER_MODEL_H
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/ErrorString.h>
-#include <quentier/utility/FileSystemWatcher.h>
-#include <quentier/utility/LRUCache.hpp>
-#include <quentier/utility/Printable.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystemWatcher.h>
+#include <lib/libquentier/headers/quentier/utility/LRUCache.hpp>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

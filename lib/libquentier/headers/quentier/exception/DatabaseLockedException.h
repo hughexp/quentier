@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_EXCEPTION_DATABASE_LOCKED_EXCEPTION_H
 #define LIB_QUENTIER_EXCEPTION_DATABASE_LOCKED_EXCEPTION_H
 
-#include <quentier/exception/IQuentierException.h>
+#include <lib/libquentier/headers/quentier/exception/IQuentierException.h>
 
 namespace quentier {
 

@@ -21,7 +21,7 @@
 
 #include "TreeView.h"
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QPointer>
 

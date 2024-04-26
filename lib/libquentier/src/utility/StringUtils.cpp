@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include "StringUtils_p.h"
 

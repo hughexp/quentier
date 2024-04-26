@@ -16,9 +16,9 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/note_editor/SpellChecker.h>
-#include <quentier/types/Account.h>
-#include <quentier/utility/FileIOProcessorAsync.h>
+#include <lib/libquentier/headers/quentier/note_editor/SpellChecker.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/utility/FileIOProcessorAsync.h>
 
 #include "SpellChecker_p.h"
 

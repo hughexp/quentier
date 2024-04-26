@@ -23,9 +23,9 @@
 
 #include <lib/model/common/NewItemNameGenerator.hpp>
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QDataStream>
 #include <QMimeData>

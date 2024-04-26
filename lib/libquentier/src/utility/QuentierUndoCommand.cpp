@@ -16,8 +16,8 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/QuentierUndoCommand.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierUndoCommand.h>
 
 namespace quentier {
 

@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_MODEL_ABSTRACT_ITEM_MODEL_H
 #define QUENTIER_LIB_MODEL_ABSTRACT_ITEM_MODEL_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QAbstractItemModel>
 #include <QStringList>

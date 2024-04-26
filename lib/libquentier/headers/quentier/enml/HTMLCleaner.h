@@ -19,7 +19,7 @@
 #ifndef LIB_QUENTIER_ENML_HTML_CLEANER_H
 #define LIB_QUENTIER_ENML_HTML_CLEANER_H
 
-#include <quentier/utility/Linkage.h>
+#include <lib/libquentier/headers/quentier/utility/Linkage.h>
 
 #include <QString>
 

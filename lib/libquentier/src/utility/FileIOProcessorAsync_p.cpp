@@ -18,8 +18,8 @@
 
 #include "FileIOProcessorAsync_p.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
 
 #include <QDir>
 #include <QFile>

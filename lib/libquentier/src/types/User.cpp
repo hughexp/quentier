@@ -18,9 +18,9 @@
 
 #include "data/UserData.h"
 
-#include <quentier/types/User.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/types/User.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
 
 #include <QRegExp>
 

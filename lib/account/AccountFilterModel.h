@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_ACCOUNT_ACCOUNT_FILTER_MODEL_H
 #define QUENTIER_LIB_ACCOUNT_ACCOUNT_FILTER_MODEL_H
 
-#include <quentier/types/Account.h>
+#include <lib/libquentier/headers/quentier/types/Account.h>
 
 #include <QSortFilterProxyModel>
 #include <QVector>

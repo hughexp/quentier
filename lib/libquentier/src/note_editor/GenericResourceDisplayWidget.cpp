@@ -22,12 +22,12 @@
 #include "NoteEditorSettingsNames.h"
 #include "ResourceDataInTemporaryFileStorageManager.h"
 
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/types/Resource.h>
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/FileIOProcessorAsync.h>
-#include <quentier/utility/MessageBox.h>
-#include <quentier/utility/QuentierCheckPtr.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/types/Resource.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/FileIOProcessorAsync.h>
+#include <lib/libquentier/headers/quentier/utility/MessageBox.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierCheckPtr.h>
 
 #include <QCryptographicHash>
 #include <QDesktopServices>

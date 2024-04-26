@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_UTILITY_FILE_SYSTEM_WATCHER_PRIVATE_H
 #define LIB_QUENTIER_UTILITY_FILE_SYSTEM_WATCHER_PRIVATE_H
 
-#include <quentier/utility/FileSystemWatcher.h>
-#include <quentier/utility/SuppressWarnings.h>
+#include <lib/libquentier/headers/quentier/utility/FileSystemWatcher.h>
+#include <lib/libquentier/headers/quentier/utility/SuppressWarnings.h>
 
 #include <QFileSystemWatcher>
 #include <QSet>

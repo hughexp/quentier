@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_DIALOG_ADD_OR_EDIT_SAVED_SEARCH_DIALOG_H
 #define QUENTIER_LIB_DIALOG_ADD_OR_EDIT_SAVED_SEARCH_DIALOG_H
 
-#include <quentier/utility/StringUtils.h>
+#include <lib/libquentier/headers/quentier/utility/StringUtils.h>
 
 #include <QDialog>
 #include <QPointer>

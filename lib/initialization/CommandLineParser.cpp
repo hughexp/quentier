@@ -20,7 +20,7 @@
 
 #include <lib/utility/HumanReadableVersionInfo.h>
 
-#include <quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
 
 #include <QCommandLineParser>
 #include <QDebug>

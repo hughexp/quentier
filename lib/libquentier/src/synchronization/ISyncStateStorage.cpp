@@ -16,12 +16,12 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/synchronization/ISyncStateStorage.h>
+#include <lib/libquentier/headers/quentier/synchronization/ISyncStateStorage.h>
 
 #include "SyncStateStorage.h"
 
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
 
 namespace quentier {
 

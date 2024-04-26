@@ -19,7 +19,7 @@
 #ifndef QUENTIER_LIB_UTILITY_QOBJECT_THREAD_MOVER_H
 #define QUENTIER_LIB_UTILITY_QOBJECT_THREAD_MOVER_H
 
-#include <quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
 
 #include <QObject>
 

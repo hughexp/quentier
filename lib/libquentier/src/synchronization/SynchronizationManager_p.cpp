@@ -25,25 +25,25 @@
 
 #include "../utility/keychain/QtKeychainService.h"
 
-#include <quentier/local_storage/LocalStorageManagerAsync.h>
-#include <quentier/logging/QuentierLogger.h>
-#include <quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManagerAsync.h>
+#include <lib/libquentier/headers/quentier/logging/QuentierLogger.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
 
-#include <quentier/synchronization/IAuthenticationManager.h>
-#include <quentier/synchronization/INoteStore.h>
-#include <quentier/synchronization/ISyncStateStorage.h>
-#include <quentier/synchronization/IUserStore.h>
+#include <lib/libquentier/headers/quentier/synchronization/IAuthenticationManager.h>
+#include <lib/libquentier/headers/quentier/synchronization/INoteStore.h>
+#include <lib/libquentier/headers/quentier/synchronization/ISyncStateStorage.h>
+#include <lib/libquentier/headers/quentier/synchronization/IUserStore.h>
 
 #if LIB_QUENTIER_HAS_AUTHENTICATION_MANAGER
-#include <quentier/synchronization/AuthenticationManager.h>
+#include <lib/libquentier/headers/quentier/synchronization/AuthenticationManager.h>
 #endif
 
-#include <quentier/utility/ApplicationSettings.h>
-#include <quentier/utility/Compat.h>
-#include <quentier/utility/DateTime.h>
-#include <quentier/utility/Printable.h>
-#include <quentier/utility/QuentierCheckPtr.h>
-#include <quentier/utility/StandardPaths.h>
+#include <lib/libquentier/headers/quentier/utility/ApplicationSettings.h>
+#include <lib/libquentier/headers/quentier/utility/Compat.h>
+#include <lib/libquentier/headers/quentier/utility/DateTime.h>
+#include <lib/libquentier/headers/quentier/utility/Printable.h>
+#include <lib/libquentier/headers/quentier/utility/QuentierCheckPtr.h>
+#include <lib/libquentier/headers/quentier/utility/StandardPaths.h>
 
 #include <QCoreApplication>
 #include <QDateTime>

@@ -19,8 +19,8 @@
 #ifndef LIB_QUENTIER_UTILITY_TAG_SORT_BY_PARENT_CHILD_RELATIONS_H
 #define LIB_QUENTIER_UTILITY_TAG_SORT_BY_PARENT_CHILD_RELATIONS_H
 
-#include <quentier/types/ErrorString.h>
-#include <quentier/types/Tag.h>
+#include <lib/libquentier/headers/quentier/types/ErrorString.h>
+#include <lib/libquentier/headers/quentier/types/Tag.h>
 
 #include <qt5qevercloud/QEverCloud.h>
 

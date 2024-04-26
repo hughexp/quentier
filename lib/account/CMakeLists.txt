@@ -27,6 +27,7 @@ set(FORMS
     DeleteAccountDialog.ui
     ManageAccountsDialog.ui)
 
+
 qt_wrap_ui(FORMS_HEADERS ${FORMS})
 
 add_library(${PROJECT_NAME} STATIC ${HEADERS} ${FORMS_HEADERS} ${SOURCES})

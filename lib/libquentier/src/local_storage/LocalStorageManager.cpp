@@ -18,8 +18,8 @@
 
 #include "LocalStorageManager_p.h"
 
-#include <quentier/local_storage/ILocalStoragePatch.h>
-#include <quentier/local_storage/LocalStorageManager.h>
+#include <lib/libquentier/headers/quentier/local_storage/ILocalStoragePatch.h>
+#include <lib/libquentier/headers/quentier/local_storage/LocalStorageManager.h>
 
 namespace quentier {
 

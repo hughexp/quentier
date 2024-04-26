@@ -16,7 +16,7 @@
  * along with libquentier. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <quentier/synchronization/INoteStore.h>
+#include <lib/libquentier/headers/quentier/synchronization/INoteStore.h>
 
 #include "NoteStore.h"
 
